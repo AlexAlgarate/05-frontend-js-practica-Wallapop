@@ -13,7 +13,6 @@ export const loginUser = async (email, password) => {
       },
     });
     const data = await response.json();
-    console.log('\n DATA \n', data, '\n');
     if (!response.ok) {
       throw new Error(data.message);
     }
