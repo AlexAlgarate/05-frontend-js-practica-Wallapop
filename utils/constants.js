@@ -7,4 +7,7 @@ export const constants = {
 export const eventListeners = {
   login: 'login-validation-error',
   signup: 'signup-validation-error',
+  startListAds: 'start-fetching-ads',
+  errorListAds: 'error-fetching-ads',
+  finishListAds: 'finish-fetching-ads',
 };
