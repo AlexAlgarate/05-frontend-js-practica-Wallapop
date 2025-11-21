@@ -1,24 +1,19 @@
-import { loaderController } from './loader/loader.controller.js';
 import { notificationsController } from './notifications/notifications.controller.js';
-import { eventListeners } from './utils/constants.js';
 import { adDetailController } from './adDetail/adDetail.controller.js';
 
-const loaderContainer = document.querySelector('#loaderContainer');
-const adDetailContainer = document.querySelector('#adDetailContainer');
+const adDetail = document.querySelector('#adDetailContainer');
 const notificationsContainer = document.querySelector('#notifications');
 
-const { show, hide } = loaderController(loaderContainer);
 const { showNotification } = notificationsController(notificationsContainer);
 
-adDetailContainer.addEventListener(eventListeners.startListAds, () => {
-  show();
-});
+const urlParams = window.location.search;
+const searchParams = new URLSearchParams(urlParams);
 
-adDetailContainer.addEventListener(eventListeners.finishListAds, () => {
-  hide();
-});
+const adId = searchParams.get('adId');
+if (!adId) {
+  window.location.href = '/';
+}
+const h1 = document.querySelector('h1');
+h1.textContent = h1.textContent + ` ${adId}`;
 
-adDetailContainer.addEventListener(eventListeners.errorListAds, (event) => {
-  showNotification(event.detail.message, event.detail.type);
-});
-adDetailController(adDetailContainer);
+adDetailController(adDetail, adId);

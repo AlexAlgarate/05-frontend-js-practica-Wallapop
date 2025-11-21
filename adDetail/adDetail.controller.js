@@ -8,6 +8,7 @@ export const adDetailController = async (adDetailContainer, adId) => {
     if (userData.id === ad.userId) {
       const removeButton = document.createElement('button');
       removeButton.classList.add('btn', 'btn-danger');
+
       removeButton.textContent = 'Borrar Ad';
       adDetailContainer.appendChild(removeButton);
 
@@ -15,7 +16,9 @@ export const adDetailController = async (adDetailContainer, adId) => {
         const confirmDelete = confirm('¿Seguro que quieres borrar el tweet?');
         if (confirmDelete) {
           await deleteAd(ad.id);
-          window.location.href = '/';
+          setTimeout(() => {
+            window.location.href = '/';
+          }, 2000);
         }
       });
     }
@@ -32,9 +35,9 @@ export const adDetailController = async (adDetailContainer, adId) => {
   }
 
   try {
-    const userData = getUserData();
+    const userData = await getUserData();
     handlerRemoveAdButton(userData);
   } catch (error) {
-    alert(error)
+    alert(error);
   }
 };

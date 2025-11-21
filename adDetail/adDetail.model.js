@@ -16,6 +16,7 @@ export const getAdDetail = async (idAd) => {
   }
   return ad;
 };
+
 export const getUserData = async () => {
   let userData = null;
   const token = localStorage.getItem(constants.tokenKey);
@@ -36,6 +37,7 @@ export const getUserData = async () => {
   }
   return userData;
 };
+
 export const deleteAd = async (idAd) => {
   let ad = null;
   const token = localStorage.getItem(constants.tokenKey);
