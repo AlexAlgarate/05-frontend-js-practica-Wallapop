@@ -32,7 +32,11 @@
           <div class="mb-3">
             <div class="d-flex justify-content-between">
               <label for="password" class="form-label">Contraseña</label>
-              <button type="button" id="toggle-password">
+              <button
+                type="button"
+                id="toggle-password"
+                class="btn btn-outline-secondary"
+              >
                 <svg
                   id="eye-icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +70,11 @@
               <label for="passwordConfirm" class="form-label"
                 >Confirmar Contraseña</label
               >
-              <button type="button" id="toggle-password-confirm">
+              <button
+                type="button"
+                id="toggle-password-confirm"
+                class="btn btn-outline-secondary"
+              >
                 <svg
                   id="eye-icon-confirm"
                   xmlns="http://www.w3.org/2000/svg"
@@ -100,36 +108,6 @@
         </form>
       </div>
     </div>
-    <script>
-      const toggleButton = (idButton, idPasswordInput, idEyeIcon) => {
-        document.getElementById(idButton).addEventListener('click', () => {
-          const passwordInput = document.getElementById(idPasswordInput);
-          const eyeIcon = document.getElementById(idEyeIcon);
-
-          if (passwordInput.type === 'password') {
-            passwordInput.type = 'text';
-
-            eyeIcon.setAttribute(
-              'd',
-              'M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49'
-            );
-            eyeIcon.innerHTML =
-              '<path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"/><path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"/><path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"/><path d="m2 2 20 20"/>';
-          } else {
-            passwordInput.type = 'password';
-
-            eyeIcon.setAttribute(
-              'd',
-              'M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0'
-            );
-            eyeIcon.innerHTML =
-              '<path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/>';
-          }
-        });
-      };
-      toggleButton('toggle-password', 'password', 'eye-icon');
-      toggleButton('toggle-password-confirm', 'passwordConfirm', 'eye-icon-confirm');
-    </script>
     <script type="module" src="./signup.js"></script>
   </body>
 </html>

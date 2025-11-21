@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="bg-dark">
+  <body class="bg-light">
     <div class="container d-flex justify-content-center align-items-center vh-100">
       <div class="card shadow-lg p-4 rounded-4" style="max-width: 400px; width: 100%">
         <h1 class="text-center mb-4">Inicia sesión</h1>
@@ -46,7 +46,7 @@
               <button
                 type="button"
                 id="toggle-password"
-                class="btn btn-danger mt-2 p-0"
+                class="btn btn-outline-secondary"
               >
                 <svg
                   id="eye-icon"
@@ -78,33 +78,7 @@
       </div>
     </div>
 
-    <script>
-      // Cambiar la visibilidad de la contraseña al hacer clic en el botón
-      document.getElementById('toggle-password').addEventListener('click', function () {
-        const passwordInput = document.getElementById('password');
-        const eyeIcon = document.getElementById('eye-icon');
-
-        // Cambiar el tipo de input entre "password" y "text"
-        if (passwordInput.type === 'password') {
-          passwordInput.type = 'text';
-
-          eyeIcon.setAttribute(
-            'd',
-            'M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49'
-          );
-          eyeIcon.innerHTML =
-            '<path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"/><path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"/><path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"/><path d="m2 2 20 20"/>';
-        } else {
-          passwordInput.type = 'password';
-          eyeIcon.setAttribute(
-            'd',
-            'M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0'
-          );
-          eyeIcon.innerHTML =
-            '<path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/>';
-        }
-      });
-    </script>
+    
     <script type="module" src="./login.js"></script>
   </body>
 </html>
