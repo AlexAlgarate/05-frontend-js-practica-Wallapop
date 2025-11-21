@@ -6,13 +6,10 @@ export const adsView = (ad) => {
     <h4>Product: ${ad.name}</h4>
     <h4>Description: ${ad.description}</h4>
     <h4>Price: ${ad.price} €</h4>
-    <h4>El artículo es de: ${ad.type}</h4>
+    <h4>El artículo con SWITCH ES: ${ad.operationType}</h4>
     <img
       style="width: 200px"
-      src="${
-        ad.image ??
-        constants.imagePlaceholder
-      }"
+      src="${ad.imageURL ?? constants.imagePlaceholder}"
     />
   `;
 };
