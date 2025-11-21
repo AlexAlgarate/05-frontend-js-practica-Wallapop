@@ -2,7 +2,7 @@ import { constants } from '../utils/constants.js';
 
 export const loginUser = async (email, password) => {
   try {
-    const response = await fetch(`${constants.baseUrlSparrest}auth/login`, {
+    const response = await fetch(`${constants.baseUrlSparrest}/auth/login`, {
       method: 'POST',
       body: JSON.stringify({
         username: email,

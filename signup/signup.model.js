@@ -1,6 +1,8 @@
+import { constants } from "../utils/constants.js";
+
 export const createUser = async (email, password) => {
   try {
-    const response = await fetch('http://localhost:8000/auth/register', {
+    const response = await fetch(`${constants.baseUrlSparrest}/auth/register`, {
       method: 'POST',
       body: JSON.stringify({
         username: email,

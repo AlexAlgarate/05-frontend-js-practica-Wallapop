@@ -1,5 +1,5 @@
 export const constants = {
-  baseUrlSparrest: 'http://localhost:8000/',
+  baseUrlSparrest: 'http://localhost:8000',
   mailRegExp: /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/,
   tokenKey: 'token',
 };
