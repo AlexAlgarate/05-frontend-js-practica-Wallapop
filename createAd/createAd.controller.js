@@ -4,16 +4,18 @@ export const createAdController = (createAdContainer) => {
   createAdContainer.addEventListener('submit', async (event) => {
     event.preventDefault();
 
-    const name = createAdContainer.querySelector('#nameProduct').value;
-    const price = Number(createAdContainer.querySelector('#priceProduct').value);
-    const description = createAdContainer.querySelector('#descriptionProduct').value;
-    const type = createAdContainer.querySelector('#CompraVentaProduct').value;
+    const name = createAdContainer.querySelector('#productName').value;
+    const price = Number(createAdContainer.querySelector('#productPrice').value);
+    const description = createAdContainer.querySelector('#productDescription').value;
+    const type = createAdContainer.querySelector('#productType').value;
+    const image = createAdContainer.querySelector('#productImage').value;
 
     const adContent = {
       name,
       description,
       price,
       type,
+      image,
     };
     try {
       await createAd(adContent);
