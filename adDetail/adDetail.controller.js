@@ -1,43 +1,55 @@
 import { buildAdDetail } from './adDetail.view.js';
 import { getAdDetail, deleteAd, getUserData } from './adDetail.model.js';
+import { constants, alertMessages } from '../utils/constants.js';
+
+const createDeleteButton = () => {
+  const button = document.createElement('button');
+  button.classList.add('btn', 'btn-danger');
+  button.textContent = 'Borrar Anuncio';
+  return button;
+};
+
+const handleDeleteClick = async (ad) => {
+  const confirmDelete = confirm(alertMessages.deleteAd);
+
+  if (confirmDelete) {
+    try {
+      await deleteAd(ad.id);
+      setTimeout(() => {
+        window.location.href = '/';
+      }, constants.redirectDelay);
+    } catch (error) {
+      alert(`Error al borrar: ${error.message}`);
+    }
+  }
+};
+
+const renderDeleteButton = (container, ad, userData) => {
+  if (userData.id === ad.userId) {
+    const deleteButton = createDeleteButton();
+    deleteButton.addEventListener('click', () => handleDeleteClick(ad));
+    container.appendChild(deleteButton);
+  }
+};
+
+const renderAdDetail = (container, ad) => {
+  const adDetail = document.createElement('div');
+  adDetail.innerHTML = buildAdDetail(ad);
+  container.appendChild(adDetail);
+};
 
 export const adDetailController = async (adDetailContainer, adId) => {
-  let ad = null;
+  try {
+    const ad = await getAdDetail(adId);
+    renderAdDetail(adDetailContainer, ad);
 
-  const handlerRemoveAdButton = (userData) => {
-    if (userData.id === ad.userId) {
-      const removeButton = document.createElement('button');
-      removeButton.classList.add('btn', 'btn-danger');
-
-      removeButton.textContent = 'Borrar Ad';
-      adDetailContainer.appendChild(removeButton);
-
-      removeButton.addEventListener('click', async () => {
-        const confirmDelete = confirm('¿Seguro que quieres borrar el tweet?');
-        if (confirmDelete) {
-          await deleteAd(ad.id);
-          setTimeout(() => {
-            window.location.href = '/';
-          }, 2000);
-        }
-      });
+    try {
+      const userData = await getUserData();
+      renderDeleteButton(adDetailContainer, ad, userData);
+    } catch (error) {
+      alert(error.message);
     }
-  };
-
-  try {
-    ad = await getAdDetail(adId);
-    const adDetail = document.createElement('div');
-    adDetail.innerHTML = buildAdDetail(ad);
-    adDetailContainer.appendChild(adDetail);
   } catch (error) {
-    alert(error);
-    // window.location.href = '/';
-  }
-
-  try {
-    const userData = await getUserData();
-    handlerRemoveAdButton(userData);
-  } catch (error) {
-    alert(error);
+    alert(error.message);
   }
 };
