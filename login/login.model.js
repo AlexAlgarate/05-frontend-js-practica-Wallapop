@@ -12,10 +12,13 @@ export const loginUser = async (email, password) => {
         'Content-Type': 'application/json',
       },
     });
+
     const data = await response.json();
+
     if (!response.ok) {
-      throw new Error(data.message);
+      throw new Error(data.message, { cause: 'data' });
     }
+
     return data.accessToken;
   } catch (error) {
     const errorMessage =
