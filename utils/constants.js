@@ -6,7 +6,6 @@ export const constants = {
   redirectDelay: 3000,
   imageAdNotAvailable:
     'https://fotografias.lasexta.com/clipping/cmsimages01/2019/05/29/9B89AC82-4176-4127-89A2-F38F13E0A84E/98.jpg?crop=1280,720,x0,y0&width=1900&height=1069&optimize=high&format=webply',
-
 };
 
 export const eventListeners = {
@@ -15,6 +14,10 @@ export const eventListeners = {
   startListAds: 'start-fetching-ads',
   errorListAds: 'error-fetching-ads',
   finishListAds: 'finish-fetching-ads',
+  startLogin: 'startLogin',
+  finishLogin: 'finishLogin',
+  startSignup: 'startSignup',
+  finishSignup: 'finishSignup',
 };
 
 export const querySelectors = {

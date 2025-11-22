@@ -42,6 +42,8 @@ const handleLoginSubmit = async (event, form) => {
   });
   if (errors.length === 0) {
     try {
+      form.dispatchEvent(new CustomEvent(eventListeners.startLogin));
+
       const token = await loginUser(email, password);
       localStorage.setItem(constants.tokenKey, token);
 
@@ -56,6 +58,8 @@ const handleLoginSubmit = async (event, form) => {
         },
       });
       form.dispatchEvent(serverErrorEvent);
+    } finally {
+      form.dispatchEvent(new CustomEvent(eventListeners.finishLogin));
     }
   }
 };

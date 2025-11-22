@@ -46,6 +46,8 @@ const handleSignupSubmit = async (event, form) => {
   }
 
   try {
+    form.dispatchEvent(new CustomEvent(eventListeners.startSignup));
+
     await createUser(email, password);
     alert(alertMessages.signup.successSignup);
     setTimeout(() => {
@@ -53,6 +55,8 @@ const handleSignupSubmit = async (event, form) => {
     }, constants.redirectDelay);
   } catch (error) {
     validationErrorEvent(eventListeners.signup, error.message, errors);
+  } finally {
+    form.dispatchEvent(new CustomEvent(eventListeners.finishSignup));
   }
 };
 
