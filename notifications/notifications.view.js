@@ -1,8 +1,8 @@
 export const buildNotification = (message, type) => {
   return `
-    <div style="display: flex; gap: 1rem; width: fit-content" class="${type}">
+    <div style="display: flex; gap: 1rem; width: fit-content" class="${type} alert alert-secondary" role="alert">
         <h3>${message}</h3>
-        <button>❌</button>
+        <button class="btn btn-outline-danger">❌</button>
     </div>
     `;
 };
