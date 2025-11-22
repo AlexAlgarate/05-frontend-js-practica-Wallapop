@@ -10,14 +10,15 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles/spinner.css" />
   </head>
   <body class="bg-light">
-    <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+      <section id="loaderContainer"></section>
       <div class="card shadow-lg p-4 rounded-4" style="max-width: 400px; width: 100%">
         <h1 class="text-center mb-4">Registro de Usuarios</h1>
         <form>
           <section id="notifications"></section>
-          <section id="loaderContainer"></section>
 
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
