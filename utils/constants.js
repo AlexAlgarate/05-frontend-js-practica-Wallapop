@@ -48,13 +48,13 @@ export const switchOptionsCreateAd = {
 
 export const alertMessages = {
   signup: {
-    invalidEmail: 'Email incorrecto, pruebe de nuevo.',
-    passwordMismatch: 'Las contraseñas no coinciden.',
+    invalidEmail: 'Email incorrecto',
+    passwordMismatch: 'Las contraseñas no coinciden',
     successSignup: 'Usuario creado correctamente',
   },
   login: {
-    invalidEmail: 'Email incorrecto, pruebe de nuevo',
-    invalidPassword: 'Contraseña incorrecta, pruebe de nuevo',
+    invalidEmail: 'Email incorrecto',
+    invalidPassword: 'Contraseña incorrecta',
   },
   deleteAd: '¿Seguro que quieres borrar este anuncio?',
 };

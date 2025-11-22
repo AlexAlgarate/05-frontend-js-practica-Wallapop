@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="./styles/spinner.css" />
   </head>
   <body class="bg-light">
-    <section id="loaderContainer"></section>
-    <section id="notifications"></section>
-    <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div
+      class="container d-flex flex-column justify-content-center align-items-center vh-100"
+    >
+      <section id="loaderContainer"></section>
       <div class="card shadow-lg p-4 rounded-4" style="max-width: 400px; width: 100%">
         <h1 class="text-center mb-4">Inicia sesión</h1>
 
@@ -72,6 +73,9 @@
             Iniciar sesión
           </button>
         </form>
+      </div>
+      <div>
+        <section id="notifications"></section>
       </div>
     </div>
 

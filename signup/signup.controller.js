@@ -7,6 +7,13 @@ import {
 } from '../utils/constants.js';
 import { validationErrorEvent } from '../utils/errorEvents.js';
 
+const successButton = (form) => {
+  const button = form.querySelector('.btn-primary');
+  button.classList.replace('btn-primary', 'btn-success');
+  button.textContent = 'Registrado con éxito';
+  return button;
+};
+
 const validateFormData = (form) => {
   const errors = [];
   const email = form.querySelector(querySelectors.authenticateUser.email).value;
@@ -49,7 +56,8 @@ const handleSignupSubmit = async (event, form) => {
     form.dispatchEvent(new CustomEvent(eventListeners.startSignup));
 
     await createUser(email, password);
-    alert(alertMessages.signup.successSignup);
+    // alert(alertMessages.signup.successSignup);
+    successButton(form);
     setTimeout(() => {
       window.location.href = '/';
     }, constants.redirectDelay);

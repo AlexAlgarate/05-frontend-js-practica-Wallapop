@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="./styles/spinner.css" />
   </head>
   <body class="bg-light">
-    <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+    <div
+      class="container d-flex flex-column justify-content-center align-items-center vh-100"
+    >
       <section id="loaderContainer"></section>
       <div class="card shadow-lg p-4 rounded-4" style="max-width: 400px; width: 100%">
         <h1 class="text-center mb-4">Registro de Usuarios</h1>
         <form>
-          <section id="notifications"></section>
-
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
             <input
@@ -109,6 +109,9 @@
 
           <button type="submit" class="btn btn-primary w-100 mt-3">Regístrate</button>
         </form>
+      </div>
+      <div>
+        <section id="notifications"></section>
       </div>
     </div>
     <script type="module" src="./signup.js"></script>

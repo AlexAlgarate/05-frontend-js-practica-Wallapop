@@ -17,6 +17,7 @@ signupForm.addEventListener(eventListeners.finishSignup, () => hide());
 signupForm.addEventListener(eventListeners.signup, (event) => {
   showNotification(event.detail.message, event.detail.type);
 });
+
 signupController(signupForm);
 
 initPasswordToggle('toggle-password', 'password', 'eye-icon');

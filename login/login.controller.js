@@ -7,6 +7,13 @@ import {
 } from '../utils/constants.js';
 import { validationErrorEvent } from '../utils/errorEvents.js';
 
+const successButton = (form) => {
+  const button = form.querySelector('.btn-primary');
+  button.classList.replace('btn-primary', 'btn-success');
+  button.textContent = 'Has iniciado sesión';
+  return button;
+};
+
 const validateFormData = (form) => {
   const errors = [];
   const email = form.querySelector(querySelectors.authenticateUser.email).value;
@@ -46,7 +53,7 @@ const handleLoginSubmit = async (event, form) => {
 
       const token = await loginUser(email, password);
       localStorage.setItem(constants.tokenKey, token);
-
+      successButton(form);
       setTimeout(() => {
         window.location.href = '/';
       }, constants.redirectDelay);

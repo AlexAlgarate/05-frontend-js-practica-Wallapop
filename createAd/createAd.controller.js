@@ -5,6 +5,13 @@ import {
   switchOptionsCreateAd,
 } from '../utils/constants.js';
 
+const successButton = (form) => {
+  const button = form.querySelector('.btn-primary');
+  button.classList.replace('btn-primary', 'btn-success');
+  button.textContent = 'Anuncio creado con éxito';
+  return button;
+};
+
 const getFormData = (form) => ({
   name: form.querySelector(querySelectors.createAdForm.productName).value.trim(),
   description: form
@@ -23,7 +30,8 @@ const handleSubmit = async (event, form) => {
 
   try {
     await createAd(adContent);
-    alert('Anuncio creado correctamente');
+
+    successButton(form);
     setTimeout(() => {
       window.location.href = '/';
     }, constants.redirectDelay);
