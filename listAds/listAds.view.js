@@ -2,16 +2,26 @@ import { constants } from '../utils/constants.js';
 
 export const adsView = (ad) => {
   return `
-    <h3>User ${ad.user.username} creó el anuncio el ${ad.createdAt}</h3>
-    <h4>Product: ${ad.name}</h4>
-    <h4>Description: ${ad.description}</h4>
-    <h4>Price: ${ad.price} €</h4>
-    <h4>El artículo con SWITCH ES: ${ad.operationType}</h4>
-    <img
-      style="width: 200px"
-      src="${ad.imageURL ? ad.imageURL : constants.imagePlaceholder}"
-    />
-  `;
+  <div>
+  <div class="card" style="width: 18rem;">
+  <img src="${
+    ad.imageURL ? ad.imageURL : constants.imagePlaceholder
+  }" alt="ad placeholder image or ad image" />
+  <div class="card-body">
+    <h5 class="card-title">Anuncio ${ad.name}</h5>
+    <p class="card-text">${ad.description}</p>
+    </div>
+    
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">${ad.price} €</li>
+    <li class="list-group-item">Artículo de ${ad.operationType}</li>
+    <li class="list-group-item">Creado por ${ad.user.username}</li>
+    <li class="list-group-item">Fecha de creación ${ad.createdAt}</li>
+    </ul>
+    </div>
+    <div class="delete-button-container"></div>
+    </div>
+    `;
 };
 
 export const buildEmptyAds = () => {

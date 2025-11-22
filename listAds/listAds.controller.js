@@ -3,10 +3,6 @@ import { adsView, buildEmptyAds } from './listAds.view.js';
 import { eventListeners } from '../utils/constants.js';
 
 const AD_STYLES = {
-  border: '1px solid #000',
-  padding: '1rem',
-  marginBottom: '10px',
-  borderRadius: '8px',
   cursor: 'pointer',
 };
 
@@ -21,14 +17,14 @@ const applyStylesToElement = (element, styles) => {
 
 const createAdElement = (ad) => {
   const adElement = document.createElement('div');
-  adElement.classList.add('ad');
-  
+  adElement.classList.add('col-12', 'col-sm-6', 'col-md-4', 'col-lg-3');
+
   applyStylesToElement(adElement, AD_STYLES);
   adElement.innerHTML = adsView(ad);
   adElement.addEventListener('click', () => {
     window.location.href = `ad-detail.html?adId=${ad.id}`;
   });
-  
+
   return adElement;
 };
 

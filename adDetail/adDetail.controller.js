@@ -27,8 +27,11 @@ const handleDeleteClick = async (ad) => {
 const renderDeleteButton = (container, ad, userData) => {
   if (userData.id === ad.userId) {
     const deleteButton = createDeleteButton();
+
     deleteButton.addEventListener('click', () => handleDeleteClick(ad));
-    container.appendChild(deleteButton);
+
+    const cardBody = container.querySelector('.card-body');
+    cardBody.appendChild(deleteButton);
   }
 };
 
