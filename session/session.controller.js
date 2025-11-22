@@ -1,27 +1,34 @@
-import { constants } from '../utils/constants.js';
+import { constants, querySelectors } from '../utils/constants.js';
 import {
   buildAuthenticatedSession,
   buildUnauthenticatedSession,
 } from './session.view.js';
 
-export const sessionController = (sessionContainer) => {
+const isUserAuthenticated = () => {
   const token = localStorage.getItem(constants.tokenKey);
+  return !!token;
+};
 
-  if (token) {
-    // usuario con sesión iniciada, muestra X botones
-    sessionContainer.innerHTML = buildAuthenticatedSession();
-    const closeSessionButton = sessionContainer.querySelector('#closeSession');
-    closeSessionButton.addEventListener('click', () => {
-      localStorage.removeItem(constants.tokenKey);
-      // Hay que volver a pontar los botones
-      // sessionContainer.innerHTML = buildUnauthenticatedSession();
-      // window.location.href = '/';
+const handleLogout = (sessionContainer) => {
+  localStorage.removeItem(constants.tokenKey);
+  sessionController(sessionContainer);
+};
 
-      // La mejor forma es llamarse así mismo
-      sessionController(sessionContainer);
-    });
-  } else {
-    // Usuario no autenticado, muestro Y botones
-    sessionContainer.innerHTML = buildUnauthenticatedSession();
-  }
+const renderAuthenticatedSession = (sessionContainer) => {
+  sessionContainer.innerHTML = buildAuthenticatedSession();
+  const closeSessionButton = sessionContainer.querySelector(
+    querySelectors.session.closeSession
+  );
+
+  closeSessionButton.addEventListener('click', () => handleLogout(sessionContainer));
+};
+
+const renderUnauthenticatedSession = (sessionContainer) => {
+  sessionContainer.innerHTML = buildUnauthenticatedSession();
+};
+
+export const sessionController = (sessionContainer) => {
+  isUserAuthenticated()
+    ? renderAuthenticatedSession(sessionContainer)
+    : renderUnauthenticatedSession(sessionContainer);
 };
