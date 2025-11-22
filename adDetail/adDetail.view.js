@@ -8,7 +8,7 @@ export const buildAdDetail = (ad) => {
     <h4>${ad.description}</h4>
     <h4>${ad.type}</h4>
     <img src="${
-      ad.imageUrl ? ad.imageUrl : constants.imagePlaceholder
+      ad.imageURL ? ad.imageURL : constants.imagePlaceholder
     }" alt="ad placeholder image" />
     `;
 };
