@@ -1,4 +1,4 @@
-import { constants } from "../utils/constants.js";
+import { constants } from '../utils/constants.js';
 
 export const adsView = (ad) => {
   return `
@@ -9,7 +9,7 @@ export const adsView = (ad) => {
     <h4>El artículo con SWITCH ES: ${ad.operationType}</h4>
     <img
       style="width: 200px"
-      src="${ad.imageURL ?? constants.imagePlaceholder}"
+      src="${ad.imageURL ? ad.imageURL : constants.imagePlaceholder}"
     />
   `;
 };
