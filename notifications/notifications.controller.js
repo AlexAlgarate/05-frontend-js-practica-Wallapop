@@ -1,3 +1,4 @@
+import { constants } from '../utils/constants.js';
 import { buildNotification } from './notifications.view.js';
 
 export function notificationsController(notificationsContainer) {
@@ -13,7 +14,7 @@ export function notificationsController(notificationsContainer) {
 
     setTimeout(() => {
       newNotification.remove();
-    }, 5000);
+    }, constants.redirectDelay);
   };
 
   return {
