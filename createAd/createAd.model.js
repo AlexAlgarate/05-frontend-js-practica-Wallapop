@@ -12,7 +12,7 @@ export const createAd = async (adContent) => {
       },
       body: JSON.stringify({
         ...adContent,
-        createdAt: new Date().toLocaleString(),
+        createdAt: new Date().toLocaleDateString(),
       }),
     });
     const data = await response.json();
