@@ -9,7 +9,6 @@ const adListContainer = document.querySelector('#ads');
 const notificationsContainer = document.querySelector('#notifications');
 const sessionContainer = document.querySelector('header');
 
-
 sessionController(sessionContainer);
 const { show, hide } = loaderController(loaderContainer);
 const { showNotification } = notificationsController(notificationsContainer);
@@ -24,6 +23,6 @@ adListContainer.addEventListener(eventListeners.finishListAds, () => {
 
 adListContainer.addEventListener(eventListeners.errorListAds, (event) => {
   showNotification(event.detail.message, event.detail.type);
-})
+});
 
 adsController(adListContainer);
