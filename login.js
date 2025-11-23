@@ -11,12 +11,8 @@ const loaderContainer = document.querySelector('#loaderContainer');
 const { showNotification } = notificationsController(notificationsContainer);
 const { show, hide } = loaderController(loaderContainer);
 
-loginForm.addEventListener(eventListeners.startLogin, () => {
-  show();
-});
-loginForm.addEventListener(eventListeners.finishLogin, () => {
-  hide();
-});
+loginForm.addEventListener(eventListeners.startLogin, () =>   show());
+loginForm.addEventListener(eventListeners.finishLogin, () => hide());
 
 loginForm.addEventListener(eventListeners.login, (event) => {
   showNotification(event.detail.message, event.detail.type);

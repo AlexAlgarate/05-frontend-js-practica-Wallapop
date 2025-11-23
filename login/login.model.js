@@ -1,4 +1,4 @@
-import { constants } from '../utils/constants.js';
+import { alertMessages, constants } from '../utils/constants.js';
 
 export const loginUser = async (email, password) => {
   try {
@@ -22,7 +22,7 @@ export const loginUser = async (email, password) => {
     return data.accessToken;
   } catch (error) {
     const errorMessage =
-      error.cause === 'data' ? error.message : 'Error iniciando sesión';
+      error.cause === 'data' ? error.message : alertMessages.login.errorLogin;
     throw new Error(errorMessage);
   }
 };

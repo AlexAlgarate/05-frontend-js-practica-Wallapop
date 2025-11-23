@@ -1,4 +1,4 @@
-import { constants } from '../utils/constants.js';
+import { alertMessages, constants } from '../utils/constants.js';
 
 export const createUser = async (email, password) => {
   try {
@@ -15,7 +15,8 @@ export const createUser = async (email, password) => {
     }
     return data;
   } catch (error) {
-    const errorMessage = error ? error.message : 'Error creando un usuario';
+    const errorMessage =
+      error.cause === 'data' ? error.message : alertMessages.signup.errorSignp;
     throw new Error(errorMessage);
   }
 };

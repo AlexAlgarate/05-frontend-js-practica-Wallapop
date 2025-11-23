@@ -51,10 +51,12 @@ export const alertMessages = {
     invalidEmail: 'Email incorrecto',
     passwordMismatch: 'Las contraseñas no coinciden',
     successSignup: 'Usuario creado correctamente',
+    errorSignp: 'Error creando un usuario',
   },
   login: {
     invalidEmail: 'Email incorrecto',
     invalidPassword: 'Contraseña incorrecta',
+    errorLogin: 'Error iniciando sesión',
   },
   deleteAd: '¿Seguro que quieres borrar este anuncio?',
 };

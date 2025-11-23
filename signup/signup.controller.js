@@ -62,7 +62,13 @@ const handleSignupSubmit = async (event, form) => {
       window.location.href = '/';
     }, constants.redirectDelay);
   } catch (error) {
-    validationErrorEvent(eventListeners.signup, error.message, errors);
+    const serverErrorEvent = new CustomEvent(eventListeners.signup, {
+      detail: {
+        message: error.message,
+        type: 'error',
+      },
+    });
+    form.dispatchEvent(serverErrorEvent);
   } finally {
     form.dispatchEvent(new CustomEvent(eventListeners.finishSignup));
   }
