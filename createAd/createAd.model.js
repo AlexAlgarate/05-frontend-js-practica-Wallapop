@@ -1,7 +1,8 @@
-import { constants } from '../utils/constants.js';
+import { constants, alertMessages } from '../utils/constants.js';
+import { getTokenLocalStorage } from '../utils/getToken.js';
 
 export const createAd = async (adContent) => {
-  const token = localStorage.getItem(constants.tokenKey);
+  const token = getTokenLocalStorage();
 
   try {
     const response = await fetch(`${constants.baseUrlSparrest}/api/ads`, {
@@ -19,9 +20,47 @@ export const createAd = async (adContent) => {
     if (!response.ok) {
       throw new Error(data.message || 'Could not create ad');
     }
-    return data
+    return data;
   } catch (error) {
     const errorMessage = error ? error.message : 'Unknown error occurred';
     throw new Error(errorMessage);
+  }
+};
+
+export const getAdData = async (adId) => {
+  try {
+    const response = await fetch(`${constants.baseUrlSparrest}/api/ads/${adId}`);
+    if (!response.ok) {
+      throw new Error(alertMessages.createAd.getAdData);
+    }
+
+    return await response.json();
+  } catch (error) {
+    throw new Error(error.message);
+  }
+};
+
+export const updateAd = async (adId, adContent) => {
+  const token = getTokenLocalStorage();
+
+  try {
+    const response = await fetch(`${constants.baseUrlSparrest}/api/ads/${adId}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
+      body: JSON.stringify({
+        ...adContent,
+        createAd: new Date().toLocaleDateString(),
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(alertMessages.createAd.updateAd);
+    }
+    return await response.json();
+  } catch (error) {
+    throw new Error(error.message);
   }
 };
