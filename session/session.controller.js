@@ -3,9 +3,10 @@ import {
   buildAuthenticatedSession,
   buildUnauthenticatedSession,
 } from './session.view.js';
+import { getTokenLocalStorage } from '../utils/getToken.js';
 
 const isUserAuthenticated = () => {
-  const token = localStorage.getItem(constants.tokenKey);
+  const token = getTokenLocalStorage();
   return !!token;
 };
 

@@ -1,6 +1,7 @@
 import { getAds } from './listAds.model.js';
 import { adsView, buildEmptyList, buildErrorView } from './listAds.view.js';
 import { constants, eventListeners } from '../utils/constants.js';
+import { getTokenLocalStorage } from '../utils/getToken.js';
 
 const AD_STYLES = {
   cursor: 'pointer',
@@ -35,7 +36,7 @@ const renderAds = (container, ads, isError) => {
   }
 
   if (ads.length === 0) {
-    const token = localStorage.getItem(constants.tokenKey);
+    const token = getTokenLocalStorage();
     const isUserAuthenticated = !!token;
 
     container.innerHTML = buildEmptyList(isUserAuthenticated);
