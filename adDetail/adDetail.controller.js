@@ -2,17 +2,17 @@ import { buildAdDetail, buildAdNotFound, buildAdError } from './adDetail.view.js
 import { getAdDetail, deleteAd, getUserData } from './adDetail.model.js';
 import { constants, alertMessages } from '../utils/constants.js';
 
-const createDeleteButton = () => {
+const createButton = (btnClass, textButton) => {
   const button = document.createElement('button');
-  button.classList.add('btn', 'btn-danger');
-  button.textContent = 'Borrar Anuncio';
+  button.classList.add('btn', btnClass);
+  button.textContent = textButton;
   return button;
 };
 
 const handleDeleteClick = async (ad) => {
-  const confirmDelete = confirm(alertMessages.deleteAd);
+  const confirmAction = confirm(alertMessages.deleteAd);
 
-  if (confirmDelete) {
+  if (confirmAction) {
     try {
       await deleteAd(ad.id);
       setTimeout(() => {
@@ -24,14 +24,22 @@ const handleDeleteClick = async (ad) => {
   }
 };
 
-const renderDeleteButton = (container, ad, userData) => {
+const renderSessionButtons = (container, ad, userData) => {
   if (userData.id === ad.userId) {
-    const deleteButton = createDeleteButton();
+    const buttonsContainer = container.querySelector('#deleteEditBtn');
 
-    deleteButton.addEventListener('click', () => handleDeleteClick(ad));
+    if (buttonsContainer) {
+      const editButton = createButton('btn-warning', 'Editar Anuncio');
+      editButton.addEventListener('click', () => {
+        window.location.href = `/create-ad.html?adId=${ad.id}`;
+      });
 
-    const cardBody = container.querySelector('.card-body');
-    cardBody.appendChild(deleteButton);
+      const deleteButton = createButton('btn-danger', 'Borrar Anuncio');
+      deleteButton.addEventListener('click', () => handleDeleteClick(ad));
+
+      buttonsContainer.appendChild(editButton);
+      buttonsContainer.appendChild(deleteButton);
+    }
   }
 };
 
@@ -48,18 +56,10 @@ export const adDetailController = async (adDetailContainer, adId) => {
     renderAdDetail(adDetailContainer, ad);
 
     try {
+      // Si hay session --> botones editar/borrar
       const userData = await getUserData();
-
-      renderDeleteButton(adDetailContainer, ad, userData);
-    } catch (error) {
-      const userErrorEvent = new CustomEvent('not-user-found', {
-        detail: {
-          message: error.message,
-          type: 'error',
-        },
-      });
-      adDetailContainer.dispatchEvent(userErrorEvent);
-    }
+      renderSessionButtons(adDetailContainer, ad, userData);
+    } catch (error) {}
   } catch (error) {
     if (error.type === '404') {
       adDetailContainer.innerHTML = buildAdNotFound();

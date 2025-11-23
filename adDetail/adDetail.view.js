@@ -52,7 +52,7 @@ export const buildAdDetail = (ad) => {
         </div>
       </div>
 
-      <div class="d-flex justify-content-between gap-3 flex-wrap mt-4 mb-2">
+      <div id="deleteEditBtn" class="d-flex justify-content-between gap-3 flex-wrap mt-4 mb-2">
         <a href="/" class="btn btn-outline-secondary btn-lg px-4" style="border-radius: 8px; border-width: 2px;">
             ← Volver al listado
         </a>

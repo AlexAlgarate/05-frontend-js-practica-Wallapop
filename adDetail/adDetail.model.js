@@ -1,4 +1,5 @@
 import { constants } from '../utils/constants.js';
+import { getTokenLocalStorage } from '../utils/getToken.js';
 
 export const getAdDetail = async (idAd) => {
   let ad = null;
@@ -28,7 +29,7 @@ export const getAdDetail = async (idAd) => {
 
 export const getUserData = async () => {
   let userData = null;
-  const token = localStorage.getItem(constants.tokenKey);
+  const token = getTokenLocalStorage();
 
   try {
     const response = await fetch(`${constants.baseUrlSparrest}/auth/me`, {
@@ -40,16 +41,15 @@ export const getUserData = async () => {
     if (!response.ok) {
       throw new Error();
     }
-    userData = response.json();
+    return await response.json();
   } catch (error) {
     throw new Error('El usuario no existe o no ha iniciado sesión');
   }
-  return userData;
 };
 
 export const deleteAd = async (idAd) => {
   let ad = null;
-  const token = localStorage.getItem(constants.tokenKey);
+  const token = getTokenLocalStorage();
 
   try {
     const response = await fetch(`${constants.baseUrlSparrest}/api/ads/${idAd}`, {

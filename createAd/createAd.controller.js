@@ -1,14 +1,33 @@
-import { createAd } from './createAd.model.js';
+import { createAd, getAdData, updateAd } from './createAd.model.js';
 import {
   constants,
   querySelectors,
   switchOptionsCreateAd,
 } from '../utils/constants.js';
 
-const successButton = (form) => {
+const fillUpdatingForm = (form, ad) => {
+  form.querySelector(querySelectors.createAdForm.productName).value = ad.name || '';
+  form.querySelector(querySelectors.createAdForm.productDescription).value =
+    ad.description || '';
+  form.querySelector(querySelectors.createAdForm.productPrice).value = ad.price || '';
+  form.querySelector(querySelectors.createAdForm.productImage).value =
+    ad.imageURL || '';
+
+  const checkboxSwitch = form.querySelector(
+    querySelectors.createAdForm.switchSalePurchase
+  );
+  const label = form.querySelector(querySelectors.createAdForm.labelSalePurhase);
+
+  const isSale = ad.operationType === switchOptionsCreateAd.sale;
+  checkboxSwitch.checked = isSale;
+  checkboxSwitch.value = ad.operationType;
+  label.textContent = ad.operationType;
+};
+
+const successButton = (form, operation) => {
   const button = form.querySelector('.btn-primary');
   button.classList.replace('btn-primary', 'btn-success');
-  button.textContent = 'Anuncio creado con éxito';
+  button.textContent = `Anuncio ${operation} correctamente`;
   return button;
 };
 
@@ -23,15 +42,20 @@ const getFormData = (form) => ({
     .value,
 });
 
-const handleSubmit = async (event, form) => {
+const handleSubmit = async (event, form, adId) => {
   event.preventDefault();
 
   const adContent = getFormData(form);
 
   try {
-    await createAd(adContent);
+    if (adId) {
+      await updateAd(adId, adContent);
+      successButton(form, 'actualizado');
+    } else {
+      await createAd(adContent);
+      successButton(form, 'creado');
+    }
 
-    successButton(form);
     setTimeout(() => {
       window.location.href = '/';
     }, constants.redirectDelay);
@@ -54,13 +78,36 @@ const initSwitch = (form) => {
     checkboxSwitch.value = value;
   };
 
-  updateSwitchLabel();
+  if (!label.textContent) {
+    updateSwitchLabel();
+  }
+
   checkboxSwitch.addEventListener('change', updateSwitchLabel);
 };
 
-export const createAdController = (createAdContainer) => {
+export const createAdController = async (createAdContainer) => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const adId = urlParams.get('adId');
+
   initSwitch(createAdContainer);
+
+  if (adId) {
+    try {
+      const title = document.querySelector('h1');
+      if (title) title.textContent = 'Editar anuncio';
+
+      const submitBtn = createAdContainer.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.textContent = 'Guardar cambios';
+
+      const ad = await getAdData(adId);
+      fillUpdatingForm(createAdContainer, ad);
+    } catch (error) {
+      alert('Error al cargar el anuncio para editar');
+      window.location.href = '/';
+    }
+  }
+
   createAdContainer.addEventListener('submit', (event) =>
-    handleSubmit(event, createAdContainer)
+    handleSubmit(event, createAdContainer, adId)
   );
 };
