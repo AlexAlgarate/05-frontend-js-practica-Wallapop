@@ -1,0 +1,268 @@
+{
+  "users": [
+    {
+      "username": "example@example.com",
+      "password": "$2b$10$lCqHiBtRMxGrPTzPBRLoyuiGSaYAlVHY.y8M2yvwf9b67eV794f1y",
+      "id": 1
+    },
+    {
+      "username": "example2@example.com",
+      "password": "$2b$10$k5wz3xBCUk3NNNVDK9qGkuh7Cw4ouXtgoGuS7cN6uyQNnXBXOBjWy",
+      "id": 2
+    }
+  ],
+  "tweets": [
+    {
+      "content": "adadsadasd",
+      "createdAt": "19/11/2025, 23:05:22",
+      "likes": 0,
+      "userId": 1,
+      "updatedAt": "2025-11-19T22:05:22.948Z",
+      "id": 4
+    }
+  ],
+  "ads": [
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 1
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 2,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 2
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 3
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 4
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 5
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 6
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 7
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 8
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 9
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 10
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 11
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 12
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 13
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 14
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 15
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 16
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 17
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Compra",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 18
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 19
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Compra",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 20
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "price": 5600,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "22/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T20:59:20.182Z",
+      "id": 21
+    },
+    {
+      "name": "iPhone 14",
+      "description": "iPhone 14 en buen estado con la salud de la batería al 85%",
+      "price": 400,
+      "imageURL": "",
+      "operationType": "Venta",
+      "createdAt": "23/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-22T23:16:52.214Z",
+      "id": 22
+    }
+  ]
+}
