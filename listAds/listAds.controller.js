@@ -1,6 +1,6 @@
 import { getAds } from './listAds.model.js';
-import { adsView, buildEmptyAds } from './listAds.view.js';
-import { eventListeners } from '../utils/constants.js';
+import { adsView, buildEmptyList, buildErrorView } from './listAds.view.js';
+import { constants, eventListeners } from '../utils/constants.js';
 
 const AD_STYLES = {
   cursor: 'pointer',
@@ -28,9 +28,17 @@ const createAdElement = (ad) => {
   return adElement;
 };
 
-const renderAds = (container, ads) => {
+const renderAds = (container, ads, isError) => {
+  if (isError) {
+    container.innerHTML = buildErrorView();
+    return;
+  }
+
   if (ads.length === 0) {
-    container.innerHTML = buildEmptyAds();
+    const token = localStorage.getItem(constants.tokenKey);
+    const isUserAuthenticated = !!token;
+
+    container.innerHTML = buildEmptyList(isUserAuthenticated);
     return;
   }
 
@@ -41,11 +49,14 @@ const renderAds = (container, ads) => {
 
 export const adsController = async (adsContainer) => {
   let adsToShow = [];
+  let isError = false;
 
   try {
     dispatchCustomEvent(adsContainer, eventListeners.startListAds);
     adsToShow = await getAds();
   } catch (error) {
+    isError = true;
+
     dispatchCustomEvent(adsContainer, eventListeners.errorListAds, {
       message: error.message,
       type: 'error',
@@ -54,5 +65,5 @@ export const adsController = async (adsContainer) => {
     dispatchCustomEvent(adsContainer, eventListeners.finishListAds);
   }
 
-  renderAds(adsContainer, adsToShow);
+  renderAds(adsContainer, adsToShow, isError);
 };

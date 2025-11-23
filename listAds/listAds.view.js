@@ -35,13 +35,49 @@ export const adsView = (ad) => {
   `;
 };
 
-export const buildEmptyAds = () => {
+export const buildErrorView = () => {
   return `
   <div class="col-12 text-center mt-5">
-    <h3>No hay anuncios disponibles</h3>
+    <h3 class="text-danger">Lo sentimos, hubo un problema al cargar los anuncios.</h3>
+    <p class="text-danger">Inténtalo de nuevo más tarde.</p>
     <img 
       style="width: 100%; max-width: 400px; border-radius: 10px;"
       src="${constants.imageAdNotAvailable}" 
+      alt="Error al cargar"
     />
   </div>`;
+};
+
+export const buildEmptyList = (isUserAuthenticated) => {
+  let actionButtons = '';
+
+  if (isUserAuthenticated) {
+    // Usuario Logueado -> Botón Crear Anuncio
+    actionButtons = `
+      <div class="mt-4">
+        <p class="lead">¡Sé el primero en publicar algo!</p>
+        <a href="/create-ad.html" class="btn btn-lg btn-primary shadow">
+          Crear mi primer anuncio
+        </a>
+      </div>
+    `;
+  } else {
+    // Usuario No Logueado -> Botones Login / Registro
+    actionButtons = `
+      <div class="mt-4">
+        <p class="lead">Únete a nuestra comunidad para empezar a vender.</p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="/signup.html" class="btn btn-primary">Regístrate</a>
+          <a href="/login.html" class="btn btn-outline-primary">Iniciar sesión</a>
+        </div>
+      </div>
+    `;
+  }
+
+  return `
+    <div class="col-12 text-center mt-5">
+      <h2>Todavía no hay anuncios disponibles</h2>
+      ${actionButtons}
+    </div>
+  `;
 };
