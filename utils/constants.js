@@ -59,4 +59,9 @@ export const alertMessages = {
     errorLogin: 'Error iniciando sesión',
   },
   deleteAd: '¿Seguro que quieres borrar este anuncio?',
+  createAd: {
+    create: 'Unknown error occurred',
+    getAdData: 'Could not load the ad information',
+    updateAd: 'Error updating the ad'
+  }
 };
