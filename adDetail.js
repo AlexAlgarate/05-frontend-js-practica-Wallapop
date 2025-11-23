@@ -1,8 +1,12 @@
 import { notificationsController } from './notifications/notifications.controller.js';
 import { adDetailController } from './adDetail/adDetail.controller.js';
+import { sessionController } from './session/session.controller.js';
 
 const adDetail = document.querySelector('#adDetailContainer');
 const notificationsContainer = document.querySelector('#notifications');
+const sessionContainer = document.querySelector('header');
+
+sessionController(sessionContainer);
 
 const { showNotification } = notificationsController(notificationsContainer);
 
