@@ -52,7 +52,7 @@ export const updateAd = async (adId, adContent) => {
       },
       body: JSON.stringify({
         ...adContent,
-        createAd: new Date().toLocaleDateString(),
+        createdAt: new Date().toLocaleDateString(),
       }),
     });
 
