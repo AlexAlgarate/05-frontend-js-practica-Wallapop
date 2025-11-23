@@ -1,4 +1,4 @@
-import { buildAdDetail } from './adDetail.view.js';
+import { buildAdDetail, buildAdNotFound, buildAdError } from './adDetail.view.js';
 import { getAdDetail, deleteAd, getUserData } from './adDetail.model.js';
 import { constants, alertMessages } from '../utils/constants.js';
 
@@ -44,15 +44,31 @@ const renderAdDetail = (container, ad) => {
 export const adDetailController = async (adDetailContainer, adId) => {
   try {
     const ad = await getAdDetail(adId);
+
     renderAdDetail(adDetailContainer, ad);
 
     try {
       const userData = await getUserData();
+
       renderDeleteButton(adDetailContainer, ad, userData);
     } catch (error) {
-      alert(error.message);
+      const userErrorEvent = new CustomEvent('not-user-found', {
+        detail: {
+          message: error.message,
+          type: 'error',
+        },
+      });
+      adDetailContainer.dispatchEvent(userErrorEvent);
     }
   } catch (error) {
-    alert(error.message);
+    if (error.type === '404') {
+      adDetailContainer.innerHTML = buildAdNotFound();
+    } else {
+      adDetailContainer.innerHTML = buildAdError(
+        error.message === 'ErrorConnection'
+          ? 'No se pudo conectar con el servidor'
+          : 'Error interno'
+      );
+    }
   }
 };

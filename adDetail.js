@@ -17,5 +17,7 @@ const adId = searchParams.get('adId');
 if (!adId) {
   window.location.href = '/';
 }
-
+adDetail.addEventListener('not-user-found', (event) => {
+  showNotification(event.detail.message, event.detail.type);
+});
 adDetailController(adDetail, adId);

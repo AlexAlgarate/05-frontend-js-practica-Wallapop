@@ -39,7 +39,7 @@ export const buildErrorView = () => {
   return `
   <div class="col-12 text-center mt-5">
     <h3 class="text-danger">Lo sentimos, hubo un problema al cargar los anuncios.</h3>
-    <p class="text-danger">Inténtalo de nuevo más tarde.</p>
+    <p class="text-muted">Inténtalo de nuevo más tarde.</p>
     <img 
       style="width: 100%; max-width: 400px; border-radius: 10px;"
       src="${constants.imageAdNotAvailable}" 

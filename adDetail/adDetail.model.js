@@ -7,14 +7,23 @@ export const getAdDetail = async (idAd) => {
     const response = await fetch(
       `${constants.baseUrlSparrest}/api/ads/${idAd}?_expand=user`
     );
-    if (!response.ok) {
-      throw new Error();
+    if (response.status === 404) {
+      const error = new Error('AdNotFound');
+      error.type = '404';
+      throw error;
     }
-    ad = await response.json();
+
+    if (!response.ok) {
+      throw new Error('ErrorServer');
+    }
+
+    return await response.json();
   } catch (error) {
-    throw new Error('Anuncio no disponible');
+    if (error.type === '404') {
+      throw error;
+    }
+    throw new Error('ErrorConnection');
   }
-  return ad;
 };
 
 export const getUserData = async () => {
@@ -33,7 +42,7 @@ export const getUserData = async () => {
     }
     userData = response.json();
   } catch (error) {
-    throw new Error('El usuario no existe');
+    throw new Error('El usuario no existe o no ha iniciado sesión');
   }
   return userData;
 };
