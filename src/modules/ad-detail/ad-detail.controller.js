@@ -31,7 +31,7 @@ const renderSessionButtons = (container, ad, userData) => {
     if (buttonsContainer) {
       const editButton = createButton('btn-warning', 'Editar Anuncio');
       editButton.addEventListener('click', () => {
-        window.location.href = `/create-ad.html?adId=${ad.id}`;
+        window.location.href = `/src/modules/create-ad/create-ad.html?adId=${ad.id}`;
       });
 
       const deleteButton = createButton('btn-danger', 'Borrar Anuncio');

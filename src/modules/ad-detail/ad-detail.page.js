@@ -1,6 +1,6 @@
-import { notificationsController } from './notifications/notifications.controller.js';
+import { notificationsController } from '../../shared/notifications/notifications.controller.js';
 import { adDetailController } from './ad-detail.controller.js';
-import { sessionController } from './session/session.controller.js';
+import { sessionController } from '../../shared/session/session.controller.js';
 
 const adDetail = document.querySelector('#adDetailContainer');
 const notificationsContainer = document.querySelector('#notifications');

@@ -3,7 +3,7 @@ import {
   buildAuthenticatedSession,
   buildUnauthenticatedSession,
 } from './session.view.js';
-import { getTokenLocalStorage } from '../../utils/getToken.js';
+import { getTokenLocalStorage } from '../../utils/get-token.js';
 
 const isUserAuthenticated = () => {
   const token = getTokenLocalStorage(constants.tokenKey);

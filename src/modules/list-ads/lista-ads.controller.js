@@ -23,7 +23,7 @@ const createAdElement = (ad) => {
   applyStylesToElement(adElement, AD_STYLES);
   adElement.innerHTML = adsView(ad);
   adElement.addEventListener('click', () => {
-    window.location.href = `ad-detail.html?adId=${ad.id}`;
+    window.location.href = `/src/modules/ad-detail/ad-detail.html?adId=${ad.id}`;
   });
 
   return adElement;

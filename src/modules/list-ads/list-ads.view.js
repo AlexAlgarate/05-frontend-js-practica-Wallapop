@@ -56,7 +56,7 @@ export const buildEmptyList = (isUserAuthenticated) => {
     actionButtons = `
       <div class="mt-4">
         <p class="lead">¡Sé el primero en publicar algo!</p>
-        <a href="/create-ad.html" class="btn btn-lg btn-primary shadow">
+        <a href="/src/modules/create-ad/create-ad.html" class="btn btn-lg btn-primary shadow">
           Crear mi primer anuncio
         </a>
       </div>
@@ -67,8 +67,8 @@ export const buildEmptyList = (isUserAuthenticated) => {
       <div class="mt-4">
         <p class="lead">Únete a nuestra comunidad para empezar a vender.</p>
         <div class="d-flex justify-content-center gap-3">
-          <a href="/signup.html" class="btn btn-primary">Regístrate</a>
-          <a href="/login.html" class="btn btn-outline-primary">Iniciar sesión</a>
+          <a href="/src/modules/signup/signup.html" class="btn btn-primary">Regístrate</a>
+          <a href="/src/modules/login/login.html" class="btn btn-outline-primary">Iniciar sesión</a>
         </div>
       </div>
     `;

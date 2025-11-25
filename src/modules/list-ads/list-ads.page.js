@@ -1,7 +1,7 @@
-import { adsController } from './list-ads/list-ads.controller.js';
+import { adsController } from './lista-ads.controller.js';
 import { loaderController } from '../../shared/loader/loader.controller.js';
 import { notificationsController } from '../../shared/notifications/notifications.controller.js';
-import { sessionController } from '../../session/session.controller.js';
+import { sessionController } from '../../shared/session/session.controller.js';
 import { eventListeners } from '../../utils/constants.js';
 
 const loaderContainer = document.querySelector('#loaderContainer');

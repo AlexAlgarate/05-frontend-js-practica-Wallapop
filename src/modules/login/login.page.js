@@ -1,4 +1,4 @@
-import { loginController } from './login/login.controller.js';
+import { loginController } from './login.controller.js';
 import { eventListeners } from '../../utils/constants.js';
 import { notificationsController } from '../../shared/notifications/notifications.controller.js';
 import { initPasswordToggle } from '../../utils/toggle-password.js';

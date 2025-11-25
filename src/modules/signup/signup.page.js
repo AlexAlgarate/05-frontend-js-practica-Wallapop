@@ -1,7 +1,7 @@
 import { notificationsController } from '../../shared/notifications/notifications.controller.js';
-import { signupController } from './signup/signup.controller.js';
+import { signupController } from './signup.controller.js';
 import { eventListeners } from '../../utils/constants.js';
-import { initPasswordToggle } from '../../utils/togglePassword.js';
+import { initPasswordToggle } from '../../utils/toggle-password.js';
 import { loaderController } from '../../shared/loader/loader.controller.js';
 
 const signupForm = document.querySelector('form');
