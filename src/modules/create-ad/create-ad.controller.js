@@ -68,7 +68,12 @@ const initSwitch = (form) => {
   const checkboxSwitch = form.querySelector(
     querySelectors.createAdForm.switchSalePurchase
   );
+
   const label = form.querySelector(querySelectors.createAdForm.labelSalePurhase);
+
+  if (!checkboxSwitch.checked) {
+    label.textContent = switchOptionsCreateAd.purchase;
+  }
 
   const updateSwitchLabel = () => {
     const value = checkboxSwitch.checked
