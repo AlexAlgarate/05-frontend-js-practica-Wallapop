@@ -1,6 +1,6 @@
 import { getAds } from './list-ad.smodel.js';
 import { adsView, buildEmptyList, buildErrorView } from './list-ads.view.js';
-import { constants, eventListeners } from '../../utils/constants.js';
+import { constants, eventListeners, ROUTES } from '../../utils/constants.js';
 import { getTokenLocalStorage } from '../../utils/get-token.js';
 
 const AD_STYLES = {
@@ -23,7 +23,7 @@ const createAdElement = (ad) => {
   applyStylesToElement(adElement, AD_STYLES);
   adElement.innerHTML = adsView(ad);
   adElement.addEventListener('click', () => {
-    window.location.href = `/src/modules/ad-detail/ad-detail.html?adId=${ad.id}`;
+    window.location.href = `${ROUTES.AD_DETAIL}?adId=${ad.id}`;
   });
 
   return adElement;

@@ -1,6 +1,6 @@
 import { buildAdDetail, buildAdNotFound, buildAdError } from './ad-detail.view.js';
 import { getAdDetail, deleteAd, getUserData } from './ad-detail.model.js';
-import { constants, alertMessages } from '../../utils/constants.js';
+import { constants, alertMessages, ROUTES } from '../../utils/constants.js';
 
 const createButton = (btnClass, textButton) => {
   const button = document.createElement('button');
@@ -31,7 +31,7 @@ const renderSessionButtons = (container, ad, userData) => {
     if (buttonsContainer) {
       const editButton = createButton('btn-warning', 'Editar Anuncio');
       editButton.addEventListener('click', () => {
-        window.location.href = `/src/modules/create-ad/create-ad.html?adId=${ad.id}`;
+        window.location.href = `${ROUTES.CREATE_AD}?adId=${ad.id}`;
       });
 
       const deleteButton = createButton('btn-danger', 'Borrar Anuncio');

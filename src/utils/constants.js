@@ -62,6 +62,14 @@ export const alertMessages = {
   createAd: {
     create: 'Unknown error occurred',
     getAdData: 'Could not load the ad information',
-    updateAd: 'Error updating the ad'
-  }
+    updateAd: 'Error updating the ad',
+  },
+};
+
+export const ROUTES = {
+  HOME: '/',
+  LOGIN: '/pages/login.html',
+  SIGNUP: '/pages/signup.html',
+  CREATE_AD: '/pages/create-ad.html',
+  AD_DETAIL: '/pages/ad-detail.html',
 };
