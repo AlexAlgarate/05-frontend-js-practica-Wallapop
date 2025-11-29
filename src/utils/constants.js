@@ -29,6 +29,11 @@ export const eventListeners = {
     errorAdDetail: 'error-fetching-ad-detail',
     finishAdDetail: 'finish-fetching-ad-detail',
   },
+  createAd: {
+    startCreateAd: 'start-create-ad',
+    errorCreateAd: 'error-create-ad',
+    finishCreateAd: 'finish-create-ad',
+  }
 };
 
 export const querySelectors = {
@@ -71,7 +76,7 @@ export const alertMessages = {
   },
   deleteAd: '¿Seguro que quieres borrar este anuncio?',
   createAd: {
-    create: 'Unknown error occurred',
+    createAd: 'Unknown error occurred',
     getAdData: 'Could not load the ad information',
     updateAd: 'Error updating the ad',
   },
