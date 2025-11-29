@@ -53,17 +53,17 @@ export const adsController = async (adsContainer) => {
   let isError = false;
 
   try {
-    dispatchCustomEvent(adsContainer, eventListeners.startListAds);
+    dispatchCustomEvent(adsContainer, eventListeners.listAds.startListAds);
     adsToShow = await getAds();
   } catch (error) {
     isError = true;
 
-    dispatchCustomEvent(adsContainer, eventListeners.errorListAds, {
+    dispatchCustomEvent(adsContainer, eventListeners.listAds.errorListAds, {
       message: error.message,
       type: 'error',
     });
   } finally {
-    dispatchCustomEvent(adsContainer, eventListeners.finishListAds);
+    dispatchCustomEvent(adsContainer, eventListeners.listAds.finishListAds);
   }
 
   renderAds(adsContainer, adsToShow, isError);

@@ -23,14 +23,14 @@ const validateFormData = (form) => {
 
   if (!emailRegExp.test(email)) {
     validationErrorEvent(
-      eventListeners.login,
+      eventListeners.login.login,
       alertMessages.login.invalidEmail,
       errors
     );
   }
   if (!password) {
     validationErrorEvent(
-      eventListeners.login,
+      eventListeners.login.login,
       alertMessages.login.invalidPassword,
       errors
     );
@@ -49,7 +49,7 @@ const handleLoginSubmit = async (event, form) => {
   });
   if (errors.length === 0) {
     try {
-      form.dispatchEvent(new CustomEvent(eventListeners.startLogin));
+      form.dispatchEvent(new CustomEvent(eventListeners.login.startLogin));
 
       const token = await loginUser(email, password);
       localStorage.setItem(constants.tokenKey, token);
@@ -58,7 +58,7 @@ const handleLoginSubmit = async (event, form) => {
         window.location.href = '/';
       }, constants.redirectDelay);
     } catch (error) {
-      const serverErrorEvent = new CustomEvent(eventListeners.login, {
+      const serverErrorEvent = new CustomEvent(eventListeners.login.login, {
         detail: {
           message: error.message,
           type: 'error',
@@ -66,7 +66,7 @@ const handleLoginSubmit = async (event, form) => {
       });
       form.dispatchEvent(serverErrorEvent);
     } finally {
-      form.dispatchEvent(new CustomEvent(eventListeners.finishLogin));
+      form.dispatchEvent(new CustomEvent(eventListeners.login.finishLogin));
     }
   }
 };

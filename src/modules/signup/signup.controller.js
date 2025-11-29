@@ -26,14 +26,14 @@ const validateFormData = (form) => {
 
   if (!emailRegExp.test(email)) {
     validationErrorEvent(
-      eventListeners.signup,
+      eventListeners.signup.signup,
       alertMessages.signup.invalidEmail,
       errors
     );
   }
   if (password !== passwordConfirm) {
     validationErrorEvent(
-      eventListeners.signup,
+      eventListeners.signup.signup,
       alertMessages.signup.passwordMismatch,
       errors
     );
@@ -53,7 +53,7 @@ const handleSignupSubmit = async (event, form) => {
   }
 
   try {
-    form.dispatchEvent(new CustomEvent(eventListeners.startSignup));
+    form.dispatchEvent(new CustomEvent(eventListeners.signup.startSignup));
 
     await createUser(email, password);
     // alert(alertMessages.signup.successSignup);
@@ -62,7 +62,7 @@ const handleSignupSubmit = async (event, form) => {
       window.location.href = '/';
     }, constants.redirectDelay);
   } catch (error) {
-    const serverErrorEvent = new CustomEvent(eventListeners.signup, {
+    const serverErrorEvent = new CustomEvent(eventListeners.signup.signup, {
       detail: {
         message: error.message,
         type: 'error',
@@ -70,7 +70,7 @@ const handleSignupSubmit = async (event, form) => {
     });
     form.dispatchEvent(serverErrorEvent);
   } finally {
-    form.dispatchEvent(new CustomEvent(eventListeners.finishSignup));
+    form.dispatchEvent(new CustomEvent(eventListeners.signup.finishSignup));
   }
 };
 

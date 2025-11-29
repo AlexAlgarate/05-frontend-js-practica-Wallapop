@@ -22,15 +22,15 @@ if (!adId) {
   window.location.href = '/';
 }
 
-adDetail.addEventListener(eventListeners.startAdDetail, () => {
+adDetail.addEventListener(eventListeners.adDetail.startAdDetail, () => {
   show();
 });
 
-adDetail.addEventListener(eventListeners.errorAdDetail, (event) => {
+adDetail.addEventListener(eventListeners.adDetail.errorAdDetail, (event) => {
   showNotification(event.detail.message, event.detail.type);
 });
 
-adDetail.addEventListener(eventListeners.finishAdDetail, () => {
+adDetail.addEventListener(eventListeners.adDetail.finishAdDetail, () => {
   hide();
 });
 

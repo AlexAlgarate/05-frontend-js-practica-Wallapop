@@ -9,18 +9,26 @@ export const constants = {
 };
 
 export const eventListeners = {
-  login: 'login-validation-error',
-  signup: 'signup-validation-error',
-  startListAds: 'start-fetching-ads',
-  errorListAds: 'error-fetching-ads',
-  finishListAds: 'finish-fetching-ads',
-  startLogin: 'startLogin',
-  finishLogin: 'finishLogin',
-  startSignup: 'startSignup',
-  finishSignup: 'finishSignup',
-  startAdDetail : 'start-fetching-ad-detail',
-  errorAdDetail : 'error-fetching-ad-detail',
-  finishAdDetail : 'finish-fetching-ad-detail',
+  login: {
+    login: 'login-validation-error',
+    startLogin: 'startLogin',
+    finishLogin: 'finishLogin',
+  },
+  signup: {
+    signup: 'signup-validation-error',
+    startSignup: 'startSignup',
+    finishSignup: 'finishSignup',
+  },
+  listAds: {
+    startListAds: 'start-fetching-ads',
+    errorListAds: 'error-fetching-ads',
+    finishListAds: 'finish-fetching-ads',
+  },
+  adDetail: {
+    startAdDetail: 'start-fetching-ad-detail',
+    errorAdDetail: 'error-fetching-ad-detail',
+    finishAdDetail: 'finish-fetching-ad-detail',
+  },
 };
 
 export const querySelectors = {

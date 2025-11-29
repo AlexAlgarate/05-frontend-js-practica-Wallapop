@@ -62,7 +62,7 @@ const dispatchCustomEvent = (container, eventName, detail = null) => {
 export const adDetailController = async (adDetailContainer, adId) => {
   try {
     const ad = await getAdDetail(adId);
-    dispatchCustomEvent(adDetailContainer, eventListeners.startAdDetail);
+    dispatchCustomEvent(adDetailContainer, eventListeners.adDetail.startAdDetail);
     renderAdDetail(adDetailContainer, ad);
 
     try {
@@ -72,7 +72,7 @@ export const adDetailController = async (adDetailContainer, adId) => {
     } catch (error) {}
   } catch (error) {
     if (error.type === '404') {
-      dispatchCustomEvent(adDetailContainer, eventListeners.errorAdDetail);
+      dispatchCustomEvent(adDetailContainer, eventListeners.adDetail.errorAdDetail);
       adDetailContainer.innerHTML = buildAdNotFound();
     } else {
       adDetailContainer.innerHTML = buildAdError(
@@ -82,6 +82,6 @@ export const adDetailController = async (adDetailContainer, adId) => {
       );
     }
   } finally {
-    dispatchCustomEvent(adDetailContainer, eventListeners.finishAdDetail);
+    dispatchCustomEvent(adDetailContainer, eventListeners.adDetail.finishAdDetail);
   }
 };

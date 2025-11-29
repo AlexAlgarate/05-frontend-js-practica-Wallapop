@@ -11,10 +11,10 @@ const loaderContainer = document.querySelector('#loaderContainer');
 const { showNotification } = notificationsController(notificationsContainer);
 const { show, hide } = loaderController(loaderContainer);
 
-signupForm.addEventListener(eventListeners.startSignup, () => show());
-signupForm.addEventListener(eventListeners.finishSignup, () => hide());
+signupForm.addEventListener(eventListeners.signup.startSignup, () => show());
+signupForm.addEventListener(eventListeners.signup.finishSignup, () => hide());
 
-signupForm.addEventListener(eventListeners.signup, (event) => {
+signupForm.addEventListener(eventListeners.signup.signup, (event) => {
   showNotification(event.detail.message, event.detail.type);
 });
 

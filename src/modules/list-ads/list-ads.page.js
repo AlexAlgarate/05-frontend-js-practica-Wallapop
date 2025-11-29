@@ -13,15 +13,15 @@ sessionController(sessionContainer);
 const { show, hide } = loaderController(loaderContainer);
 const { showNotification } = notificationsController(notificationsContainer);
 
-adListContainer.addEventListener(eventListeners.startListAds, () => {
+adListContainer.addEventListener(eventListeners.listAds.startListAds, () => {
   show();
 });
 
-adListContainer.addEventListener(eventListeners.finishListAds, () => {
+adListContainer.addEventListener(eventListeners.listAds.finishListAds, () => {
   hide();
 });
 
-adListContainer.addEventListener(eventListeners.errorListAds, (event) => {
+adListContainer.addEventListener(eventListeners.listAds.errorListAds, (event) => {
   showNotification(event.detail.message, event.detail.type);
 });
 
