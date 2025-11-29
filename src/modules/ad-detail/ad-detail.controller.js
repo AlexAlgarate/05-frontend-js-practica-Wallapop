@@ -1,6 +1,11 @@
 import { buildAdDetail, buildAdNotFound, buildAdError } from './ad-detail.view.js';
 import { getAdDetail, deleteAd, getUserData } from './ad-detail.model.js';
-import { constants, alertMessages, ROUTES } from '../../utils/constants.js';
+import {
+  constants,
+  alertMessages,
+  ROUTES,
+  eventListeners,
+} from '../../utils/constants.js';
 
 const createButton = (btnClass, textButton) => {
   const button = document.createElement('button');
@@ -49,10 +54,15 @@ const renderAdDetail = (container, ad) => {
   container.appendChild(adDetail);
 };
 
+const dispatchCustomEvent = (container, eventName, detail = null) => {
+  const event = new CustomEvent(eventName, detail ? { detail } : {});
+  container.dispatchEvent(event);
+};
+
 export const adDetailController = async (adDetailContainer, adId) => {
   try {
     const ad = await getAdDetail(adId);
-
+    dispatchCustomEvent(adDetailContainer, eventListeners.startAdDetail);
     renderAdDetail(adDetailContainer, ad);
 
     try {
@@ -62,6 +72,7 @@ export const adDetailController = async (adDetailContainer, adId) => {
     } catch (error) {}
   } catch (error) {
     if (error.type === '404') {
+      dispatchCustomEvent(adDetailContainer, eventListeners.errorAdDetail);
       adDetailContainer.innerHTML = buildAdNotFound();
     } else {
       adDetailContainer.innerHTML = buildAdError(
@@ -70,5 +81,7 @@ export const adDetailController = async (adDetailContainer, adId) => {
           : 'Error interno'
       );
     }
+  } finally {
+    dispatchCustomEvent(adDetailContainer, eventListeners.finishAdDetail);
   }
 };

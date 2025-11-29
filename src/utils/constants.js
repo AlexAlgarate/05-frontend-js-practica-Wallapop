@@ -18,6 +18,9 @@ export const eventListeners = {
   finishLogin: 'finishLogin',
   startSignup: 'startSignup',
   finishSignup: 'finishSignup',
+  startAdDetail : 'start-fetching-ad-detail',
+  errorAdDetail : 'error-fetching-ad-detail',
+  finishAdDetail : 'finish-fetching-ad-detail',
 };
 
 export const querySelectors = {
