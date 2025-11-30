@@ -1,7 +1,7 @@
 import { createAd, getAdData, updateAd } from './create-ad.model.js';
 import {
   constants,
-  querySelectors,
+  querySelectors as qs,
   switchOptionsCreateAd,
   eventListeners,
 } from '../../utils/constants.js';
@@ -9,24 +9,18 @@ import { buildCreateAdForm, buildCreateAdError } from './create-ad.view.js';
 import { dispatchCustomEvent } from '../../utils/customEvent.js';
 
 const successButton = (form, operation) => {
-  const button = form.querySelector(`.${querySelectors.button.primary}`);
-  button.classList.replace(
-    querySelectors.button.primary,
-    querySelectors.button.success
-  );
+  const button = form.querySelector(`.${qs.button.primary}`);
+  button.classList.replace(qs.button.primary, qs.button.success);
   button.textContent = `Anuncio ${operation} correctamente`;
   return button;
 };
 
 const getFormData = (form) => ({
-  name: form.querySelector(querySelectors.createAdForm.productName).value.trim(),
-  description: form
-    .querySelector(querySelectors.createAdForm.productDescription)
-    .value.trim(),
-  price: Number(form.querySelector(querySelectors.createAdForm.productPrice).value),
-  imageURL: form.querySelector(querySelectors.createAdForm.productImage).value.trim(),
-  operationType: form.querySelector(querySelectors.createAdForm.switchSalePurchase)
-    .value,
+  name: form.querySelector(qs.createAdForm.productName).value.trim(),
+  description: form.querySelector(qs.createAdForm.productDescription).value.trim(),
+  price: Number(form.querySelector(qs.createAdForm.productPrice).value),
+  imageURL: form.querySelector(qs.createAdForm.productImage).value.trim(),
+  operationType: form.querySelector(qs.createAdForm.switchSalePurchase).value,
 });
 
 const handleSubmit = async (event, form, adId, container) => {
@@ -59,11 +53,9 @@ const handleSubmit = async (event, form, adId, container) => {
 };
 
 const initSwitch = (form) => {
-  const checkboxSwitch = form.querySelector(
-    querySelectors.createAdForm.switchSalePurchase
-  );
+  const checkboxSwitch = form.querySelector(qs.createAdForm.switchSalePurchase);
 
-  const label = form.querySelector(querySelectors.createAdForm.labelSalePurhase);
+  const label = form.querySelector(qs.createAdForm.labelSalePurhase);
 
   if (!checkboxSwitch.checked) {
     label.textContent = switchOptionsCreateAd.purchase;

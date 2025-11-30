@@ -1,4 +1,4 @@
-import { querySelectors } from '../../utils/constants.js';
+import { querySelectors as qs } from '../../utils/constants.js';
 
 export const buildCreateAdForm = (ad = null) => {
   const isEditing = !!ad;
@@ -67,7 +67,7 @@ export const buildCreateAdForm = (ad = null) => {
             ${ad?.operationType || ''}
           </label>
         </div>
-        <button type="submit" class="btn ${querySelectors.button.primary} w-100 mt-3">
+        <button type="submit" class="btn ${qs.button.primary} w-100 mt-3">
           ${buttonText}
         </button>
         <a href="/" class="btn btn-link w-100 text-decoration-none text-secondary">
@@ -88,7 +88,7 @@ export const buildCreateAdError = (message) => {
       <div class="d-flex justify-content-center gap-3">
         <a href="/" class="btn btn-outline-secondary">Volver al inicio</a>
         <button onclick="window.location.reload()" class="btn ${
-          querySelectors.button.primary
+          qs.button.primary
         }">Reintentar</button>
       </div>
     </div>

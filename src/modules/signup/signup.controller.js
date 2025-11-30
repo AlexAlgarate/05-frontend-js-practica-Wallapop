@@ -2,28 +2,23 @@ import { createUser } from './signup.model.js';
 import {
   constants,
   eventListeners,
-  querySelectors,
+  querySelectors as qs,
   alertMessages,
 } from '../../utils/constants.js';
 import { validationErrorEvent } from '../../utils/error-events.js';
 
 const successButton = (form) => {
-  const button = form.querySelector(`.${querySelectors.button.primary}`);
-  button.classList.replace(
-    querySelectors.button.primary,
-    querySelectors.button.success
-  );
+  const button = form.querySelector(`.${qs.button.primary}`);
+  button.classList.replace(qs.button.primary, qs.button.success);
   button.textContent = 'Registrado con éxito';
   return button;
 };
 
 const validateFormData = (form) => {
   const errors = [];
-  const email = form.querySelector(querySelectors.authenticateUser.email).value;
-  const password = form.querySelector(querySelectors.authenticateUser.password).value;
-  const passwordConfirm = form.querySelector(
-    querySelectors.authenticateUser.passwordConfirm
-  ).value;
+  const email = form.querySelector(qs.authenticateUser.email).value;
+  const password = form.querySelector(qs.authenticateUser.password).value;
+  const passwordConfirm = form.querySelector(qs.authenticateUser.passwordConfirm).value;
 
   const emailRegExp = new RegExp(constants.mailRegExp);
 

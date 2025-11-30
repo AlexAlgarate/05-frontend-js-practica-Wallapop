@@ -1,4 +1,4 @@
-import { constants, querySelectors } from '../../utils/constants.js';
+import { constants, querySelectors as qs } from '../../utils/constants.js';
 
 export const buildAdDetail = (ad) => {
   return `
@@ -68,7 +68,7 @@ export const buildAdNotFound = () => {
         <h2 class="display-4 fw-bold text-secondary">404</h2>
         <h3 class="mb-4">Vaya, este anuncio no existe.</h3>
         <p class="lead text-muted mb-4">Es posible que haya sido borrado o que la dirección sea incorrecta.</p>
-        <a href="/" class="btn ${querySelectors.button.primary} btn-lg">Volver a los anuncios</a>
+        <a href="/" class="btn ${qs.button.primary} btn-lg">Volver a los anuncios</a>
     </div>
     `;
 };
@@ -83,7 +83,7 @@ export const buildAdError = (message) => {
         <div class="d-flex justify-content-center gap-3">
             <a href="/" class="btn btn-outline-secondary">Volver al inicio</a>
             <button onclick="window.location.reload()" class="btn ${
-              querySelectors.button.primary
+              qs.button.primary
             }">Reintentar</button>
         </div>
     </div>

@@ -1,4 +1,4 @@
-import { constants, querySelectors } from '../../utils/constants.js';
+import { constants, querySelectors as qs } from '../../utils/constants.js';
 import {
   buildAuthenticatedSession,
   buildUnauthenticatedSession,
@@ -17,9 +17,7 @@ const handleLogout = (sessionContainer) => {
 
 const renderAuthenticatedSession = (sessionContainer) => {
   sessionContainer.innerHTML = buildAuthenticatedSession();
-  const closeSessionButton = sessionContainer.querySelector(
-    querySelectors.session.closeSession
-  );
+  const closeSessionButton = sessionContainer.querySelector(qs.session.closeSession);
 
   closeSessionButton.addEventListener('click', () => handleLogout(sessionContainer));
 };
