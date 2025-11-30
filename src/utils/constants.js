@@ -34,6 +34,10 @@ export const eventListeners = {
     errorCreateAd: 'error-create-ad',
     finishCreateAd: 'finish-create-ad',
   },
+  searchAds: {
+    search: 'search-ads',
+    clearSearch: 'clear-search',
+  },
 };
 
 export const querySelectors = {
@@ -60,7 +64,18 @@ export const querySelectors = {
     outlinePrimary: 'btn-outline-primary',
     info: 'btn-info',
     success: 'btn-success',
-    danger: 'btn-danger'
+    danger: 'btn-danger',
+  },
+  searchAd: {
+    searchinput: '#searchInput',
+    searchForm: '#searchForm',
+    clearSearch: '#clearSearch',
+    searchContainer: '#searchContainer',
+    clearButton : '#clearSearchFromResults'
+  },
+  shared: {
+    loaderContainer: '#loaderContainer',
+    notifications: '#notifications',
   },
 };
 

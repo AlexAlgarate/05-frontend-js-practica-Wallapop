@@ -13,19 +13,29 @@
     />
   </head>
   <body>
-    
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark bg-gradient mb-4" style="--bs-bg-opacity: .75;">
+    <nav
+      class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark bg-gradient mb-4"
+      style="--bs-bg-opacity: 0.75"
+    >
       <div class="container-fluid m-0 d-flex align-items-center">
         <a class="navbar-brand fw-bold fs-1" href="/">Wallapop Clone</a>
         <header class="d-flex gap-4"></header>
       </div>
-    </nav> 
+    </nav>
 
     <main class="container">
       <h2 class="text-center mb-4">Listado de anuncios</h2>
 
-      <section class="d-flex justify-content-center my-3" id="loaderContainer"></section>
+      <section
+        class="d-flex justify-content-center my-3"
+        id="loaderContainer"
+      ></section>
+
       <div class="d-flex flex-column align-items-center">
+        <section
+          id="searchContainer"
+          class="w-100 d-flex justify-content-center mb-3"
+        ></section>
 
         <section id="notifications"></section>
         <section id="ads" class="row g-4"></section>
