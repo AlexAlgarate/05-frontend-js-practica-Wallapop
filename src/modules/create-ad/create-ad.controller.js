@@ -3,30 +3,21 @@ import {
   constants,
   querySelectors,
   switchOptionsCreateAd,
+  eventListeners,
 } from '../../utils/constants.js';
+import { buildCreateAdForm, buildCreateAdError } from './create-ad.view.js';
 
-const fillUpdatingForm = (form, ad) => {
-  form.querySelector(querySelectors.createAdForm.productName).value = ad.name || '';
-  form.querySelector(querySelectors.createAdForm.productDescription).value =
-    ad.description || '';
-  form.querySelector(querySelectors.createAdForm.productPrice).value = ad.price || '';
-  form.querySelector(querySelectors.createAdForm.productImage).value =
-    ad.imageURL || '';
-
-  const checkboxSwitch = form.querySelector(
-    querySelectors.createAdForm.switchSalePurchase
-  );
-  const label = form.querySelector(querySelectors.createAdForm.labelSalePurhase);
-
-  const isSale = ad.operationType === switchOptionsCreateAd.sale;
-  checkboxSwitch.checked = isSale;
-  checkboxSwitch.value = ad.operationType;
-  label.textContent = ad.operationType;
+const dispatchCustomEvent = (container, eventName, detail = null) => {
+  const event = new CustomEvent(eventName, detail ? { detail } : {});
+  container.dispatchEvent(event);
 };
 
 const successButton = (form, operation) => {
-  const button = form.querySelector('.btn-primary');
-  button.classList.replace('btn-primary', 'btn-success');
+  const button = form.querySelector(`.${querySelectors.button.primary}`);
+  button.classList.replace(
+    querySelectors.button.primary,
+    querySelectors.button.success
+  );
   button.textContent = `Anuncio ${operation} correctamente`;
   return button;
 };
@@ -42,12 +33,14 @@ const getFormData = (form) => ({
     .value,
 });
 
-const handleSubmit = async (event, form, adId) => {
+const handleSubmit = async (event, form, adId, container) => {
   event.preventDefault();
 
   const adContent = getFormData(form);
 
   try {
+    dispatchCustomEvent(container, eventListeners.createAd.startCreateAd);
+
     if (adId) {
       await updateAd(adId, adContent);
       successButton(form, 'actualizado');
@@ -60,7 +53,12 @@ const handleSubmit = async (event, form, adId) => {
       window.location.href = '/';
     }, constants.redirectDelay);
   } catch (error) {
-    alert(error.message);
+    dispatchCustomEvent(container, eventListeners.createAd.errorCreateAd, {
+      message: error.message,
+      type: 'error',
+    });
+  } finally {
+    dispatchCustomEvent(container, eventListeners.createAd.finishCreateAd);
   }
 };
 
@@ -90,29 +88,40 @@ const initSwitch = (form) => {
   checkboxSwitch.addEventListener('change', updateSwitchLabel);
 };
 
+const renderCreateAdForm = (container, ad = null) => {
+  const formElement = document.createElement('div');
+  formElement.innerHTML = buildCreateAdForm(ad);
+  container.appendChild(formElement);
+
+  const form = container.querySelector('form');
+  initSwitch(form);
+
+  return form;
+};
+
 export const createAdController = async (createAdContainer) => {
   const urlParams = new URLSearchParams(window.location.search);
   const adId = urlParams.get('adId');
 
-  initSwitch(createAdContainer);
+  let form;
 
-  if (adId) {
-    try {
-      const title = document.querySelector('h1');
-      if (title) title.textContent = 'Editar anuncio';
-
-      const submitBtn = createAdContainer.querySelector('button[type="submit"]');
-      if (submitBtn) submitBtn.textContent = 'Guardar cambios';
-
+  try {
+    if (adId) {
+      dispatchCustomEvent(createAdContainer, eventListeners.createAd.startCreateAd);
       const ad = await getAdData(adId);
-      fillUpdatingForm(createAdContainer, ad);
-    } catch (error) {
-      alert('Error al cargar el anuncio para editar');
-      window.location.href = '/';
+      form = renderCreateAdForm(createAdContainer, ad);
+    } else {
+      form = renderCreateAdForm(createAdContainer);
+    }
+
+    form.addEventListener('submit', (event) =>
+      handleSubmit(event, form, adId, createAdContainer)
+    );
+  } catch (error) {
+    createAdContainer.innerHTML = buildCreateAdError(error.message);
+  } finally {
+    if (adId) {
+      dispatchCustomEvent(createAdContainer, eventListeners.createAd.finishCreateAd);
     }
   }
-
-  createAdContainer.addEventListener('submit', (event) =>
-    handleSubmit(event, createAdContainer, adId)
-  );
 };
