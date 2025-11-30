@@ -8,8 +8,11 @@ import {
 import { validationErrorEvent } from '../../utils/error-events.js';
 
 const successButton = (form) => {
-  const button = form.querySelector('.btn-primary');
-  button.classList.replace('btn-primary', 'btn-success');
+  const button = form.querySelector(`.${querySelectors.button.primary}`);
+  button.classList.replace(
+    querySelectors.button.primary,
+    querySelectors.button.success
+  );
   button.textContent = 'Registrado con éxito';
   return button;
 };

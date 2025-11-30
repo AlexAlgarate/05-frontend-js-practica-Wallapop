@@ -1,4 +1,4 @@
-import { constants, ROUTES } from '../../utils/constants.js';
+import { constants, querySelectors, ROUTES } from '../../utils/constants.js';
 
 export const adsView = (ad) => {
   return `
@@ -56,7 +56,7 @@ export const buildEmptyList = (isUserAuthenticated) => {
     actionButtons = `
       <div class="mt-4">
         <p class="lead">¡Sé el primero en publicar algo!</p>
-        <a href="${ROUTES.CREATE_AD}" class="btn btn-lg btn-primary shadow">
+        <a href="${ROUTES.CREATE_AD}" class="btn btn-lg ${querySelectors.button.primary} shadow">
           Crear mi primer anuncio
         </a>
       </div>
@@ -67,8 +67,8 @@ export const buildEmptyList = (isUserAuthenticated) => {
       <div class="mt-4">
         <p class="lead">Únete a nuestra comunidad para empezar a vender.</p>
         <div class="d-flex justify-content-center gap-3">
-          <a href="${ROUTES.SIGNUP}" class="btn btn-primary">Regístrate</a>
-          <a href="${ROUTES.LOGIN}" class="btn btn-outline-primary">Iniciar sesión</a>
+          <a href="${ROUTES.SIGNUP}" class="btn ${querySelectors.button.primary}">Regístrate</a>
+          <a href="${ROUTES.LOGIN}" class="btn ${querySelectors.button.outlinePrimary}">Iniciar sesión</a>
         </div>
       </div>
     `;

@@ -33,7 +33,7 @@ export const eventListeners = {
     startCreateAd: 'start-create-ad',
     errorCreateAd: 'error-create-ad',
     finishCreateAd: 'finish-create-ad',
-  }
+  },
 };
 
 export const querySelectors = {
@@ -54,6 +54,13 @@ export const querySelectors = {
   },
   session: {
     closeSession: '#closeSession',
+  },
+  button: {
+    primary: 'btn-primary',
+    outlinePrimary: 'btn-outline-primary',
+    info: 'btn-info',
+    success: 'btn-success',
+    danger: 'btn-danger'
   },
 };
 
