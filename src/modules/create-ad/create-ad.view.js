@@ -57,7 +57,7 @@ export const buildCreateAdForm = (ad = null) => {
             role="switch"
             id="switchCompraVenta"
             style="cursor: pointer"
-            ${ad?.operationType === 'Venta' ? 'Compra' : ''}
+            ${ad?.operationType === 'Venta' ? 'checked' : ''}
           />
           <label
             class="form-check-label"

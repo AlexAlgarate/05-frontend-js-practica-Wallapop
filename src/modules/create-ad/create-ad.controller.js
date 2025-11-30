@@ -57,10 +57,6 @@ const initSwitch = (form) => {
 
   const label = form.querySelector(qs.createAdForm.labelSalePurhase);
 
-  if (!checkboxSwitch.checked) {
-    label.textContent = switchOptionsCreateAd.purchase;
-  }
-
   const updateSwitchLabel = () => {
     const value = checkboxSwitch.checked
       ? switchOptionsCreateAd.sale
@@ -69,9 +65,7 @@ const initSwitch = (form) => {
     checkboxSwitch.value = value;
   };
 
-  if (!label.textContent) {
-    updateSwitchLabel();
-  }
+  updateSwitchLabel();
 
   checkboxSwitch.addEventListener('change', updateSwitchLabel);
 };
