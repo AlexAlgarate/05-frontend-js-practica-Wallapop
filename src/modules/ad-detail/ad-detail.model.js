@@ -1,8 +1,8 @@
-import { constants } from '../../utils/constants.js';
+import { alertMessages, constants } from '../../utils/constants.js';
 import { getTokenLocalStorage } from '../../utils/get-token.js';
 
 export const getAdDetail = async (idAd) => {
-  let ad = null;
+
 
   try {
     const response = await fetch(
@@ -28,7 +28,7 @@ export const getAdDetail = async (idAd) => {
 };
 
 export const getUserData = async () => {
-  let userData = null;
+
   const token = getTokenLocalStorage(constants.tokenKey);
 
   try {
@@ -43,7 +43,7 @@ export const getUserData = async () => {
     }
     return await response.json();
   } catch (error) {
-    throw new Error('El usuario no existe o no ha iniciado sesión');
+    throw new Error(alertMessages.adDetail.getUserData);
   }
 };
 
@@ -63,7 +63,7 @@ export const deleteAd = async (idAd) => {
       throw new Error();
     }
   } catch (error) {
-    throw new Error('Error');
+    throw new Error(alertMessages.adDetail.deleteAd);
   }
   return ad;
 };

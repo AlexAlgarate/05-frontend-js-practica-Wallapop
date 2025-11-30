@@ -4,6 +4,7 @@ import {
   eventListeners,
   querySelectors as qs,
   alertMessages,
+  ROUTES,
 } from '../../utils/constants.js';
 import { validationErrorEvent } from '../../utils/error-events.js';
 
@@ -57,7 +58,7 @@ const handleSignupSubmit = async (event, form) => {
     // alert(alertMessages.signup.successSignup);
     successButton(form);
     setTimeout(() => {
-      window.location.href = '/';
+      window.location.href = ROUTES.HOME;
     }, constants.redirectDelay);
   } catch (error) {
     const serverErrorEvent = new CustomEvent(eventListeners.signup.signup, {

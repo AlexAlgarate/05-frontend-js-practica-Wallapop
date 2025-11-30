@@ -5,9 +5,9 @@ import { sessionController } from '../../shared/session/session.controller.js';
 import { eventListeners, querySelectors as qs } from '../../utils/constants.js';
 
 const loaderContainer = document.querySelector(qs.shared.loaderContainer);
-const adListContainer = document.querySelector('#ads');
+const adListContainer = document.querySelector(qs.listAdsContainer);
 const notificationsContainer = document.querySelector(qs.shared.notifications);
-const sessionContainer = document.querySelector('header');
+const sessionContainer = document.querySelector(qs.shared.header);
 
 sessionController(sessionContainer);
 

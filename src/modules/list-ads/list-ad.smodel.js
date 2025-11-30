@@ -1,10 +1,10 @@
-import { constants } from '../../utils/constants.js';
+import { constants, alertMessages} from '../../utils/constants.js';
 
 export const getAds = async () => {
   try {
     const response = await fetch(`${constants.baseUrlSparrest}/api/ads?_expand=user`);
     if (!response.ok) {
-      throw new Error('Error al cargar los anuncios');
+      throw new Error(alertMessages.listAds);
     }
 
     return await response.json();

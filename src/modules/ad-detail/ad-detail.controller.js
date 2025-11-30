@@ -5,7 +5,7 @@ import {
   alertMessages,
   ROUTES,
   eventListeners,
-  querySelectors as qs
+  querySelectors as qs,
 } from '../../utils/constants.js';
 import { dispatchCustomEvent } from '../../utils/customEvent.js';
 
@@ -33,7 +33,7 @@ const handleDeleteClick = async (ad) => {
 
 const renderSessionButtons = (container, ad, userData) => {
   if (userData.id === ad.userId) {
-    const buttonsContainer = container.querySelector('#deleteEditBtn');
+    const buttonsContainer = container.querySelector(qs.session.editButton);
 
     if (buttonsContainer) {
       const editButton = createButton(qs.buttons.warning, 'Editar Anuncio');
@@ -41,7 +41,7 @@ const renderSessionButtons = (container, ad, userData) => {
         window.location.href = `${ROUTES.CREATE_AD}?adId=${ad.id}`;
       });
 
-      const deleteButton = createButton('btn-danger', 'Borrar Anuncio');
+      const deleteButton = createButton(qs.buttons.danger, 'Borrar Anuncio');
       deleteButton.addEventListener('click', () => handleDeleteClick(ad));
 
       buttonsContainer.appendChild(editButton);

@@ -3,11 +3,12 @@ import { adDetailController } from './ad-detail.controller.js';
 import { sessionController } from '../../shared/session/session.controller.js';
 import { loaderController } from '../../shared/loader/loader.controller.js';
 import { eventListeners } from '../../utils/constants.js';
+import { querySelectors as qs } from '../../utils/constants.js';
 
-const adDetail = document.querySelector('#adDetailContainer');
-const notificationsContainer = document.querySelector('#notifications');
-const sessionContainer = document.querySelector('header');
-const loaderContainer = document.querySelector('#loaderContainer');
+const adDetail = document.querySelector(qs.adDetailContainer);
+const notificationsContainer = document.querySelector(qs.shared.notifications);
+const sessionContainer = document.querySelector(qs.shared.header);
+const loaderContainer = document.querySelector(qs.shared.loaderContainer);
 
 sessionController(sessionContainer);
 

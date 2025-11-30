@@ -58,6 +58,7 @@ export const querySelectors = {
   },
   session: {
     closeSession: '#closeSession',
+    editButton: '#deleteEditBtn',
   },
   buttons: {
     primary: 'btn-primary',
@@ -77,7 +78,13 @@ export const querySelectors = {
   shared: {
     loaderContainer: '#loaderContainer',
     notifications: '#notifications',
+    header: 'header',
   },
+  adDetailContainer: '#adDetailContainer',
+  createAdContainer: '#createAdContainer',
+  listAdsContainer: '#ads',
+  loginContainer: 'form',
+  signupContainer: 'form',
 };
 
 export const switchOptionsCreateAd = {
@@ -103,6 +110,11 @@ export const alertMessages = {
     getAdData: 'Could not load the ad information',
     updateAd: 'Error updating the ad',
   },
+  adDetail: {
+    getUserData: 'El usuario no existe o no ha iniciado sesión',
+    deleteAd: 'Error borrando el anuncio',
+  },
+  listAds: 'Error al cargar los anuncios',
 };
 
 export const ROUTES = {
