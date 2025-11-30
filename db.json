@@ -2,302 +2,284 @@
   "users": [
     {
       "username": "example@example.com",
-      "password": "$2b$10$lCqHiBtRMxGrPTzPBRLoyuiGSaYAlVHY.y8M2yvwf9b67eV794f1y",
+      "password": "$2b$10$T1IUqaWyMf5U97Lo01paV.ISeFlpU5Mgy/5Y1dmfwv3F8pRKfCLFK",
       "id": 1
     },
     {
       "username": "example2@example.com",
-      "password": "$2b$10$k5wz3xBCUk3NNNVDK9qGkuh7Cw4ouXtgoGuS7cN6uyQNnXBXOBjWy",
+      "password": "$2b$10$T1IUqaWyMf5U97Lo01paV.ISeFlpU5Mgy/5Y1dmfwv3F8pRKfCLFK",
       "id": 2
+    },
+    {
+      "username": "vickyfood@example.com",
+      "password": "$2b$10$8AFIB1zd340A7VtOa2n2c.NwlwPGKIlxKATGt3kbpdZAWiQJgik8C",
+      "id": 3
     }
   ],
-
   "ads": [
     {
       "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Venta",
-      "createdAt": "23/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-23T21:52:29.814Z",
-      "id": 1
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
+      "description": "Bici súper aero para rodar muy rápido por las carreteras de Guadalajara",
       "price": 5600,
       "imageURL": "",
-      "operationType": "Compra",
-      "createdAt": "22/11/2025",
-      "userId": 2,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 2
-    },
-    {
-      "name": "Triciclo Canyon 2015",
-      "description": "Sin discusiones: el triciclo  más rápido del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el",
-      "price": 1005,
-      "imageURL": "https://imgs.search.brave.com/bvxvj_3vCV_Ip-in7vkNMpg2_Xix3dDBlCXEp_UnIXY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2h1dHRlcnN0b2Nr/LmNvbS9pbWFnZS1w/aG90by90cmljeWNs/ZS1raWRzLW9uLWdy/ZXktY2FycGV0LTI2/MG53LTUzMjIwMjQ2/MS5qcGc",
-      "operationType": "on",
+      "operationType": "Venta",
       "createdAt": "30/11/2025",
-      "userId": 2,
-      "updatedAt": "2025-11-30T17:10:43.711Z",
-      "id": 3
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Venta",
-      "createdAt": "22/11/2025",
       "userId": 1,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 4
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Compra",
-      "createdAt": "22/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 5
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Compra",
-      "createdAt": "22/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 6
-    },
-    {
-      "name": "Canyon AeroRoadd",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 51600,
-      "imageURL": "",
-      "operationType": "Venta",
-      "createdAt": "23/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-23T21:52:46.273Z",
-      "id": 7
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Venta",
-      "createdAt": "22/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 8
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Venta",
-      "createdAt": "22/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 9
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Venta",
-      "createdAt": "22/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 10
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Venta",
-      "createdAt": "22/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 11
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Venta",
-      "createdAt": "22/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 12
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Venta",
-      "createdAt": "22/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 13
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Venta",
-      "createdAt": "22/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 14
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Venta",
-      "createdAt": "22/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 15
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Venta",
-      "createdAt": "22/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 16
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Venta",
-      "createdAt": "22/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 17
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Compra",
-      "createdAt": "22/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 18
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Venta",
-      "createdAt": "22/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 19
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el túnel de viento frente a sus competidoras y validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Compra",
-      "createdAt": "22/11/2025",
-      "userId": 2,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 20
-    },
-    {
-      "name": "Canyon AeroRoad",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, validada en carreras en el mundo real, es, oficialmente, la bicicleta más rápida del World Tour.",
-      "price": 5600,
-      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
-      "operationType": "Venta",
-      "createdAt": "22/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-22T20:59:20.182Z",
-      "id": 21
-    },
-    {
-      "name": "iPhone 14",
-      "description": "iPhone 14 en buen estado con la salud de la batería al 85%",
-      "price": 400,
-      "imageURL": "",
-      "operationType": "Venta",
-      "createdAt": "23/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-22T23:16:52.214Z",
-      "id": 22
-    },
-    {
-      "name": "Cascos",
-      "description": "Cascos válidos para Android pero no para iOS. Están en perfecto estado, solo le falta la almohadilla a uno de los cascos.",
-      "price": 13000,
-      "imageURL": "https://resize.sprintercdn.com/b/1504x2256/products/6450d3d0-ce49-4a76-bba3-521e081207c0/sudio-klar-cascos-inal-mbricos-anc-con-cancelaci-n-activa-de-ruido-negros_6450d3d0-ce49-4a76-bba3-521e081207c0_1_4009525466.jpg?w=1504&q=75",
-      "operationType": "Venta",
-      "createdAt": "23/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-23T21:52:55.756Z",
-      "id": 23
+      "updatedAt": "2025-11-30T19:29:33.805Z",
+      "id": 1
     },
     {
       "name": "Mustang GT",
       "description": "Vendo Mustang GT de 1965. 450cv 1200cc De 0 a 100 en 1.5'' \nCuenta con todos los papeles y la ITV pasada\nLas ruedas están recién cambiadas.",
-      "price": 1500,
+      "price": 15000,
       "imageURL": "https://imgs.search.brave.com/GArD4rgYmHN-onMRbZ-YYDs2k6IIScEtqmDP-HxNXFk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9l/L2VkL0ZvcmRfTXVz/dGFuZ19jb3VwZV8t/LV8xMS0xMy0yMDEx/XzEuanBn",
       "operationType": "Venta",
-      "createdAt": "23/11/2025",
+      "createdAt": "30/11/2025",
       "userId": 1,
-      "updatedAt": "2025-11-23T21:53:02.497Z",
-      "id": 24
+      "updatedAt": "2025-11-30T19:30:19.397Z",
+      "id": 2
     },
     {
-      "name": "Tendedero de ropa",
-      "description": "Busco un tendedero de ropa que no sea de plástico para que no se rompa fácilmente, preferiblemente como los de toda la vida.",
-      "price": 100,
-      "imageURL": "https://imgs.search.brave.com/LWqK0d2ydCSX-dKV6yC8ptg1fDo_lpWPbcPJlK3wfc4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGFwb3AuY29t/L2ltYWdlcy8xMDQy/MC9qNy8wMS9fXy9j/MTA0MjBwMTE2MDYx/NzE3MS9pNTg0ODQy/OTMwNC5qcGc_cGlj/dHVyZVNpemU9VzMy/MA",
-      "operationType": "Compra",
-      "createdAt": "26/11/2025",
+      "name": "Canyon AeroRoad 2010",
+      "description": "Compro Canyon AeroRoad de 2010 para mi hijo",
+      "price": 1300,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "on",
+      "createdAt": "30/11/2025",
       "userId": 1,
-      "updatedAt": "2025-11-25T23:43:17.099Z",
-      "id": 25
+      "updatedAt": "2025-11-30T19:31:42.541Z",
+      "id": 3
     },
     {
-      "name": "Disco duro Toshiba 1Tb",
-      "description": "Disco duro externo de 1Tb de almacenamiento",
-      "price": 150,
+      "name": "Triciclo",
+      "description": "Vendo triciclo de mi hijo, ya no lo usa. Seminuevo",
+      "price": 10,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "30/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-30T19:32:44.630Z",
+      "id": 4
+    },
+    {
+      "name": "AirPod izquierdo 2019",
+      "description": "Vendo solo el AirPod izquierdo, modelo del 2019. El derecho se lo tragó mi perro y está inservible.",
+      "price": 40,
+      "imageURL": "https://imgs.search.brave.com/OvJsBoSQgAFBHBW_dRfc5CowCxdZ_7AAXxX9j0ARSAs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/Xzk1MzcxMS1NQ084/MzkwNTYzMzkzMF8w/NDIwMjUtVi53ZWJw",
+      "operationType": "Venta",
+      "createdAt": "30/11/2025",
+      "userId": 2,
+      "updatedAt": "2025-11-30T19:34:42.405Z",
+      "id": 5
+    },
+    {
+      "name": "Colcha para la cama",
+      "description": "Compro colcha para la cama de color verde parecida a la de la imagen",
+      "price": 40,
+      "imageURL": "https://imgs.search.brave.com/ptAg02Ks3RqOtFOexQbxWJVpMFaTEVm_Q_HIuMY8Uxk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5hZGVvLmNvbS9t/ZWRpYS8zMTc3MDMz/L21lZGlhLmpwZWc_/d2lkdGg9MTkwMCZm/b3JtYXQ9anBn",
+      "operationType": "on",
+      "createdAt": "30/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-30T19:38:32.717Z",
+      "id": 6
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Bici súper aero para rodar muy rápido por las carreteras de Guadalajara",
+      "price": 5600,
       "imageURL": "",
       "operationType": "Venta",
-      "createdAt": "29/11/2025",
+      "createdAt": "30/11/2025",
       "userId": 1,
-      "updatedAt": "2025-11-29T10:49:59.547Z",
-      "id": 26
+      "updatedAt": "2025-11-30T19:29:33.805Z",
+      "id": 1
+    },
+    {
+      "name": "Mustang GT",
+      "description": "Vendo Mustang GT de 1965. 450cv 1200cc De 0 a 100 en 1.5'' \nCuenta con todos los papeles y la ITV pasada\nLas ruedas están recién cambiadas.",
+      "price": 15000,
+      "imageURL": "https://imgs.search.brave.com/GArD4rgYmHN-onMRbZ-YYDs2k6IIScEtqmDP-HxNXFk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9l/L2VkL0ZvcmRfTXVz/dGFuZ19jb3VwZV8t/LV8xMS0xMy0yMDEx/XzEuanBn",
+      "operationType": "Venta",
+      "createdAt": "30/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-30T19:30:19.397Z",
+      "id": 2
+    },
+    {
+      "name": "Canyon AeroRoad 2010",
+      "description": "Compro Canyon AeroRoad de 2010 para mi hijo",
+      "price": 1300,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "on",
+      "createdAt": "30/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-30T19:31:42.541Z",
+      "id": 3
+    },
+    {
+      "name": "Triciclo",
+      "description": "Vendo triciclo de mi hijo, ya no lo usa. Seminuevo",
+      "price": 100,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "30/11/2025",
+      "userId": 2,
+      "updatedAt": "2025-11-30T19:32:44.630Z",
+      "id": 4
+    },
+    {
+      "name": "AirPod derecho 2019",
+      "description": "Vendo solo el AirPod derecho, modelo del 2019. El derecho se lo tragó mi perro y está inservible.",
+      "price": 40,
+      "imageURL": "https://imgs.search.brave.com/OvJsBoSQgAFBHBW_dRfc5CowCxdZ_7AAXxX9j0ARSAs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/Xzk1MzcxMS1NQ084/MzkwNTYzMzkzMF8w/NDIwMjUtVi53ZWJw",
+      "operationType": "Venta",
+      "createdAt": "30/11/2025",
+      "userId": 2,
+      "updatedAt": "2025-11-30T19:34:42.405Z",
+      "id": 5
+    },
+    {
+      "name": "Colcha para la cama",
+      "description": "Compro colcha para la cama de color verde parecida a la de la imagen",
+      "price": 40,
+      "imageURL": "https://imgs.search.brave.com/ptAg02Ks3RqOtFOexQbxWJVpMFaTEVm_Q_HIuMY8Uxk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5hZGVvLmNvbS9t/ZWRpYS8zMTc3MDMz/L21lZGlhLmpwZWc_/d2lkdGg9MTkwMCZm/b3JtYXQ9anBn",
+      "operationType": "on",
+      "createdAt": "30/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-30T19:38:32.717Z",
+      "id": 6
+    },
+    {
+      "name": "Canyon AeroRoad",
+      "description": "Bici súper aero para rodar muy rápido por las carreteras de Guadalajara",
+      "price": 5600,
+      "imageURL": "",
+      "operationType": "Venta",
+      "createdAt": "30/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-30T19:29:33.805Z",
+      "id": 1
+    },
+    {
+      "name": "Mustang GT",
+      "description": "Vendo Mustang GT de 1965. 450cv 1200cc De 0 a 100 en 1.5'' \nCuenta con todos los papeles y la ITV pasada\nLas ruedas están recién cambiadas.",
+      "price": 15000,
+      "imageURL": "https://imgs.search.brave.com/GArD4rgYmHN-onMRbZ-YYDs2k6IIScEtqmDP-HxNXFk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9l/L2VkL0ZvcmRfTXVz/dGFuZ19jb3VwZV8t/LV8xMS0xMy0yMDEx/XzEuanBn",
+      "operationType": "Venta",
+      "createdAt": "30/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-30T19:30:19.397Z",
+      "id": 2
+    },
+    {
+      "name": "Canyon AeroRoad 2010",
+      "description": "Compro Canyon AeroRoad de 2010 para mi hijo",
+      "price": 1300,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "on",
+      "createdAt": "30/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-30T19:31:42.541Z",
+      "id": 3
+    },
+    {
+      "name": "Triciclo",
+      "description": "Vendo triciclo de mi hijo, ya no lo usa. Seminuevo",
+      "price": 10,
+      "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
+      "operationType": "Venta",
+      "createdAt": "30/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-30T19:32:44.630Z",
+      "id": 4
+    },
+    {
+      "name": "AirPod izquierdo 2015",
+      "description": "Vendo solo el AirPod izquierdo, modelo del 2015. El derecho se lo tragó mi perro y está inservible.",
+      "price": 40,
+      "imageURL": "https://imgs.search.brave.com/OvJsBoSQgAFBHBW_dRfc5CowCxdZ_7AAXxX9j0ARSAs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/Xzk1MzcxMS1NQ084/MzkwNTYzMzkzMF8w/NDIwMjUtVi53ZWJw",
+      "operationType": "Venta",
+      "createdAt": "30/11/2025",
+      "userId": 2,
+      "updatedAt": "2025-11-30T19:34:42.405Z",
+      "id": 5
+    },
+    {
+      "name": "Colcha para la cama",
+      "description": "Compro colcha para la cama de color verde parecida a la de la imagen",
+      "price": 40,
+      "imageURL": "https://imgs.search.brave.com/ptAg02Ks3RqOtFOexQbxWJVpMFaTEVm_Q_HIuMY8Uxk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5hZGVvLmNvbS9t/ZWRpYS8zMTc3MDMz/L21lZGlhLmpwZWc_/d2lkdGg9MTkwMCZm/b3JtYXQ9anBn",
+      "operationType": "on",
+      "createdAt": "30/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-30T19:38:32.717Z",
+      "id": 6
+    },
+    {
+      "name": "Mochila de viaje",
+      "description": "Compro mochila de viaje de color gris",
+      "price": 40,
+      "imageURL": "https://imgs.search.brave.com/Pml64GvmzbhGcsV-7zB6O1vEfkS9_aSQr7FTfO-bva4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9nYWJv/bC5jb20vMjcyMDA4/OS1ob21lX2RlZmF1/bHQvbW9jaGlsYS1i/b2xzby1zaGFuaS5q/cGc",
+      "operationType": "on",
+      "createdAt": "30/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-30T19:44:44.055Z",
+      "id": 7
+    },
+    {
+      "name": "Ratón Logitech",
+      "description": "Vendo ratón Logitech gaming. No tengo fotografías pero está en buen estado.",
+      "price": 40,
+      "imageURL": "",
+      "operationType": "Venta",
+      "createdAt": "30/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-30T19:55:08.556Z",
+      "id": 8
+    },
+    {
+      "name": "Goma de borrar",
+      "description": "Necesito una goma de borrar Milán de 40cm de largo.",
+      "price": 20,
+      "imageURL": "",
+      "operationType": "on",
+      "createdAt": "30/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-30T19:55:28.740Z",
+      "id": 9
+    },
+    {
+      "name": "Boli Bic",
+      "description": "Compro boli Bic negro",
+      "price": 1,
+      "imageURL": "https://imgs.search.brave.com/k3egQdF8M96AkPKDoskn5jk8-mPv30_LiDCIOx5be9Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/b2Zpcml2YXMuY29t/LzEwMDA5Ni1sYXJn/ZV9kZWZhdWx0L2Jv/bGlncmFmby1ib2xp/LXB1bnRhLW1lZGlh/LWNyaXN0YWwtb3Jp/Z2luYWwtbmVncm8t/YmljLTExMjMwMS04/MzczNjMxLmpwZw",
+      "operationType": "on",
+      "createdAt": "30/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-30T20:08:08.385Z",
+      "id": 10
+    },
+    {
+      "name": "Zapatillas de estar por casa",
+      "description": "Zapatillas de estar por casa de invierno, seminuevas, muy cómodas y muy calentitas.",
+      "price": 12,
+      "imageURL": "https://imgs.search.brave.com/1k6RLNwlfHuVJRHOXnT5xqNkN2Z-FgcF_M0MLC-S0OE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZW5lcy5lbHBhaXMu/Y29tL3Jlc2l6ZXIv/djIvNzRWN0lFMlJU/VkI1UkQyM1JaQ0hV/S1VQT0UucG5nP2F1/dGg9NWQ4NzBlZDEy/MTUwNGM0YjhmMjMz/YWViNThjYzkwZTYy/NDY3ZTNjMWZjNTdh/ZDE1ZDQ5ODBhNGIz/MmE5ODVkZiZ3aWR0/aD00MTQmaGVpZ2h0/PTMxMSZzbWFydD10/cnVl",
+      "operationType": "Venta",
+      "createdAt": "30/11/2025",
+      "userId": 3,
+      "updatedAt": "2025-11-30T20:13:29.073Z",
+      "id": 11
+    },
+    {
+      "name": "Thinkpad 2025",
+      "description": "Compro ThinkPad del año 2025 1Tb disco duro 16gb RAM",
+      "price": 1000,
+      "imageURL": "",
+      "operationType": "Compra",
+      "createdAt": "30/11/2025",
+      "userId": 3,
+      "updatedAt": "2025-11-30T20:24:08.814Z",
+      "id": 12
     }
   ]
 }
