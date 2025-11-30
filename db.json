@@ -11,16 +11,7 @@
       "id": 2
     }
   ],
-  "tweets": [
-    {
-      "content": "adadsadasd",
-      "createdAt": "19/11/2025, 23:05:22",
-      "likes": 0,
-      "userId": 1,
-      "updatedAt": "2025-11-19T22:05:22.948Z",
-      "id": 4
-    }
-  ],
+
   "ads": [
     {
       "name": "Canyon AeroRoad",
@@ -45,14 +36,14 @@
       "id": 2
     },
     {
-      "name": "Canyon AeroRoad 2015",
-      "description": "Sin discusiones: la bicicleta más rápida del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el",
-      "price": 1000,
-      "imageURL": "",
-      "operationType": "Venta",
-      "createdAt": "23/11/2025",
-      "userId": 1,
-      "updatedAt": "2025-11-23T21:52:38.064Z",
+      "name": "Triciclo Canyon 2015",
+      "description": "Sin discusiones: el triciclo  más rápido del pelotón\nLa Aeroad no solo es más resistente, más inteligente y más adaptable que antes. Probada en el",
+      "price": 1005,
+      "imageURL": "https://imgs.search.brave.com/bvxvj_3vCV_Ip-in7vkNMpg2_Xix3dDBlCXEp_UnIXY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2h1dHRlcnN0b2Nr/LmNvbS9pbWFnZS1w/aG90by90cmljeWNs/ZS1raWRzLW9uLWdy/ZXktY2FycGV0LTI2/MG53LTUzMjIwMjQ2/MS5qcGc",
+      "operationType": "on",
+      "createdAt": "30/11/2025",
+      "userId": 2,
+      "updatedAt": "2025-11-30T17:10:43.711Z",
       "id": 3
     },
     {
@@ -238,7 +229,7 @@
       "imageURL": "https://imgs.search.brave.com/vrbxkouXc-1-mGFQvVcwqe47MhBr8xofiwNIuGFBJPg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXVuZG9kZXBvcnRp/dm8uY29tL2ZpbGVz/L2ltYWdlXzMzNF8x/NjQvZmlsZXMvZnAv/dXBsb2Fkcy8yMDI0/LzA3LzE5LzY2OWE0/MWM1ZWVhYWUucl9k/LjYyMi01MDguanBl/Zw",
       "operationType": "Compra",
       "createdAt": "22/11/2025",
-      "userId": 1,
+      "userId": 2,
       "updatedAt": "2025-11-22T20:59:20.182Z",
       "id": 20
     },
@@ -285,6 +276,28 @@
       "userId": 1,
       "updatedAt": "2025-11-23T21:53:02.497Z",
       "id": 24
+    },
+    {
+      "name": "Tendedero de ropa",
+      "description": "Busco un tendedero de ropa que no sea de plástico para que no se rompa fácilmente, preferiblemente como los de toda la vida.",
+      "price": 100,
+      "imageURL": "https://imgs.search.brave.com/LWqK0d2ydCSX-dKV6yC8ptg1fDo_lpWPbcPJlK3wfc4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d2FsbGFwb3AuY29t/L2ltYWdlcy8xMDQy/MC9qNy8wMS9fXy9j/MTA0MjBwMTE2MDYx/NzE3MS9pNTg0ODQy/OTMwNC5qcGc_cGlj/dHVyZVNpemU9VzMy/MA",
+      "operationType": "Compra",
+      "createdAt": "26/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-25T23:43:17.099Z",
+      "id": 25
+    },
+    {
+      "name": "Disco duro Toshiba 1Tb",
+      "description": "Disco duro externo de 1Tb de almacenamiento",
+      "price": 150,
+      "imageURL": "",
+      "operationType": "Venta",
+      "createdAt": "29/11/2025",
+      "userId": 1,
+      "updatedAt": "2025-11-29T10:49:59.547Z",
+      "id": 26
     }
   ]
 }
