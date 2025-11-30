@@ -2,14 +2,10 @@ import { getAds } from './list-ad.smodel.js';
 import { adsView, buildEmptyList, buildErrorView } from './list-ads.view.js';
 import { constants, eventListeners, ROUTES } from '../../utils/constants.js';
 import { getTokenLocalStorage } from '../../utils/get-token.js';
+import { dispatchCustomEvent } from '../../utils/customEvent.js';
 
 const AD_STYLES = {
   cursor: 'pointer',
-};
-
-const dispatchCustomEvent = (container, eventName, detail = null) => {
-  const event = new CustomEvent(eventName, detail ? { detail } : {});
-  container.dispatchEvent(event);
 };
 
 const applyStylesToElement = (element, styles) => {

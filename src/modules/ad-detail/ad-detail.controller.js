@@ -6,6 +6,7 @@ import {
   ROUTES,
   eventListeners,
 } from '../../utils/constants.js';
+import { dispatchCustomEvent } from '../../utils/customEvent.js';
 
 const createButton = (btnClass, textButton) => {
   const button = document.createElement('button');
@@ -52,11 +53,6 @@ const renderAdDetail = (container, ad) => {
   const adDetail = document.createElement('div');
   adDetail.innerHTML = buildAdDetail(ad);
   container.appendChild(adDetail);
-};
-
-const dispatchCustomEvent = (container, eventName, detail = null) => {
-  const event = new CustomEvent(eventName, detail ? { detail } : {});
-  container.dispatchEvent(event);
 };
 
 export const adDetailController = async (adDetailContainer, adId) => {

@@ -6,11 +6,7 @@ import {
   eventListeners,
 } from '../../utils/constants.js';
 import { buildCreateAdForm, buildCreateAdError } from './create-ad.view.js';
-
-const dispatchCustomEvent = (container, eventName, detail = null) => {
-  const event = new CustomEvent(eventName, detail ? { detail } : {});
-  container.dispatchEvent(event);
-};
+import { dispatchCustomEvent } from '../../utils/customEvent.js';
 
 const successButton = (form, operation) => {
   const button = form.querySelector(`.${querySelectors.button.primary}`);
