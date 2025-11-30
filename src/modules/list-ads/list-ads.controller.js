@@ -1,9 +1,15 @@
 import { getAds } from './list-ad.smodel.js';
 import { adsView, buildEmptyList, buildErrorView } from './list-ads.view.js';
 import { buildNoResultsView } from '../search-ads/search-ads.view.js';
-import { constants, eventListeners as el, ROUTES, querySelectors as qs } from '../../utils/constants.js';
+import {
+  constants,
+  eventListeners as el,
+  ROUTES,
+  querySelectors as qs,
+} from '../../utils/constants.js';
 import { getTokenLocalStorage } from '../../utils/get-token.js';
 import { dispatchCustomEvent } from '../../utils/customEvent.js';
+import { searchController } from '../search-ads/search-ads.controller.js';
 
 const AD_STYLES = {
   cursor: 'pointer',
@@ -90,19 +96,23 @@ export const adsController = async (adsContainer) => {
 
   renderAds(adsContainer, allAds, isError);
 
-  // Listener para búsqueda
+  const searchContainer = document.querySelector(qs.searchAd.searchContainer);
+
+  if (!isError && allAds.length > 0) {
+    searchController(searchContainer, adsContainer);
+  } else {
+    searchContainer.innerHTML = '';
+  }
   adsContainer.addEventListener(el.searchAds.search, (event) => {
     currentSearchTerm = event.detail.searchTerm;
     const filteredAds = filterAds(allAds, currentSearchTerm);
     renderAds(adsContainer, filteredAds, false, currentSearchTerm);
   });
 
-  // Listener para limpiar búsqueda
   adsContainer.addEventListener(el.searchAds.clearSearch, () => {
     currentSearchTerm = '';
     renderAds(adsContainer, allAds, false);
 
-    // Limpiar el input de búsqueda
     const searchInput = document.querySelector(qs.searchAd.searchinput);
     if (searchInput) {
       searchInput.value = '';
