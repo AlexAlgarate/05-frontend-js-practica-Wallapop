@@ -12,10 +12,10 @@ export const buildSearchForm = () => {
             placeholder="Buscar por nombre o descripción..."
             required
           />
-          <button type="submit" class="btn ${qs.button.primary} text-nowrap">
+          <button type="submit" class="btn ${qs.buttons.primary} text-nowrap">
             Buscar
           </button>
-          <button type="button" id="clearSearch" class="btn ${qs.button.outlinePrimary} text-nowrap">
+          <button type="button" id="clearSearch" class="btn ${qs.buttons.outlinePrimary} text-nowrap">
             Limpiar
           </button>
         </form>
@@ -29,7 +29,7 @@ export const buildNoResultsView = (searchTerm) => {
     <div class="col-12 text-center mt-5">
       <h3 class="text-muted">No se encontraron resultados</h3>
       <p class="lead">No hay anuncios que coincidan con "<strong style="font-weight: 800;">${searchTerm}</strong>"</p>
-      <button id="clearSearchFromResults" class="btn ${qs.button.primary} mt-3">
+      <button id="clearSearchFromResults" class="btn ${qs.buttons.primary} mt-3">
         Ver todos los anuncios
       </button>
     </div>

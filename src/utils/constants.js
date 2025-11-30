@@ -59,19 +59,20 @@ export const querySelectors = {
   session: {
     closeSession: '#closeSession',
   },
-  button: {
+  buttons: {
     primary: 'btn-primary',
     outlinePrimary: 'btn-outline-primary',
     info: 'btn-info',
     success: 'btn-success',
     danger: 'btn-danger',
+    warning: 'btn-warning',
   },
   searchAd: {
     searchinput: '#searchInput',
     searchForm: '#searchForm',
     clearSearch: '#clearSearch',
     searchContainer: '#searchContainer',
-    clearButton : '#clearSearchFromResults'
+    clearButton: '#clearSearchFromResults',
   },
   shared: {
     loaderContainer: '#loaderContainer',

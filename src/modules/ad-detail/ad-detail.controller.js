@@ -5,6 +5,7 @@ import {
   alertMessages,
   ROUTES,
   eventListeners,
+  querySelectors as qs
 } from '../../utils/constants.js';
 import { dispatchCustomEvent } from '../../utils/customEvent.js';
 
@@ -35,7 +36,7 @@ const renderSessionButtons = (container, ad, userData) => {
     const buttonsContainer = container.querySelector('#deleteEditBtn');
 
     if (buttonsContainer) {
-      const editButton = createButton('btn-warning', 'Editar Anuncio');
+      const editButton = createButton(qs.buttons.warning, 'Editar Anuncio');
       editButton.addEventListener('click', () => {
         window.location.href = `${ROUTES.CREATE_AD}?adId=${ad.id}`;
       });

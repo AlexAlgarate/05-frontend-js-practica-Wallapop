@@ -8,8 +8,8 @@ import {
 import { validationErrorEvent } from '../../utils/error-events.js';
 
 const successButton = (form) => {
-  const button = form.querySelector(`.${qs.button.primary}`);
-  button.classList.replace(qs.button.primary, qs.button.success);
+  const button = form.querySelector(`.${qs.buttons.primary}`);
+  button.classList.replace(qs.buttons.primary, qs.buttons.success);
   button.textContent = 'Has iniciado sesión';
   return button;
 };

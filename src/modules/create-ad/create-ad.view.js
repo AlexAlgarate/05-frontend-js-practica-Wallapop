@@ -57,7 +57,7 @@ export const buildCreateAdForm = (ad = null) => {
             role="switch"
             id="switchCompraVenta"
             style="cursor: pointer"
-            ${ad?.operationType === 'Venta' ? 'checked' : ''}
+            ${ad?.operationType === 'Venta' ? 'Compra' : ''}
           />
           <label
             class="form-check-label"
@@ -67,7 +67,7 @@ export const buildCreateAdForm = (ad = null) => {
             ${ad?.operationType || ''}
           </label>
         </div>
-        <button type="submit" class="btn ${qs.button.primary} w-100 mt-3">
+        <button type="submit" class="btn ${qs.buttonss.primary} w-100 mt-3">
           ${buttonText}
         </button>
         <a href="/" class="btn btn-link w-100 text-decoration-none text-secondary">
@@ -88,7 +88,7 @@ export const buildCreateAdError = (message) => {
       <div class="d-flex justify-content-center gap-3">
         <a href="/" class="btn btn-outline-secondary">Volver al inicio</a>
         <button onclick="window.location.reload()" class="btn ${
-          qs.button.primary
+          qs.buttonss.primary
         }">Reintentar</button>
       </div>
     </div>

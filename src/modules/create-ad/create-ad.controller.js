@@ -9,8 +9,8 @@ import { buildCreateAdForm, buildCreateAdError } from './create-ad.view.js';
 import { dispatchCustomEvent } from '../../utils/customEvent.js';
 
 const successButton = (form, operation) => {
-  const button = form.querySelector(`.${qs.button.primary}`);
-  button.classList.replace(qs.button.primary, qs.button.success);
+  const button = form.querySelector(`.${qs.buttons.primary}`);
+  button.classList.replace(qs.buttons.primary, qs.buttons.success);
   button.textContent = `Anuncio ${operation} correctamente`;
   return button;
 };
